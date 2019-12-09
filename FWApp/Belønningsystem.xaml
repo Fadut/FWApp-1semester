@@ -8,7 +8,41 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock Text="Hello" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Grid Background="#6E6E6E">
+        <Grid Margin="0,286,0,436" BorderThickness="1.2" BorderBrush="Black"></Grid>
+        <Grid BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Background="#FF4D4D4D" Height="72">
+            <TextBlock Text="Belønninger" FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Comic Sans MS" Foreground="#FF33FF33" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" Width="300" Margin="66,15,66,0"/>
+            <Button Content="🡐" FocusVisualPrimaryBrush="#00121212" Foreground="#FFD4D4D4" Background="#00000000" FontFamily="Comic Sans MS" FontSize="50" Height="76" Width="66" VerticalAlignment="Top" Margin="0,-4,0,0"/>
+            <Button Content="☰" FontSize="35" Background="#00000000" Margin="369,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Right"  Height="72" Width="63" Foreground="#FFD4D4D4"/>
+        </Grid>
+        <Grid Margin="0,70,0,479" Background="#FF33FF33" BorderThickness="1.2" BorderBrush="Black">
+
+        </Grid>
+        <Grid Margin="0,321,0,13" Background="#E8E8E8">
+            <TextBlock Text="Belønningsliste" FontSize="30" FontFamily="Comic Sans MS" Margin="30,20,190,354" FontWeight="Bold"></TextBlock>
+
+            <Grid BorderThickness="1.2" BorderBrush="Black">
+
+                <Grid BorderThickness="1.2" BorderBrush="Black" Margin="36,96,0,193" HorizontalAlignment="Left" Width="132">
+                    <Grid Background="#D4D4D4" Margin="10,111,10,8" BorderBrush="Black" BorderThickness="1">
+                        <TextBlock Text="500 pt." FontFamily="Comic Sans MS" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"  Height="20" Width="70"></TextBlock>
+                    </Grid>
+
+                    <TextBlock Text="BILLEDE" FontFamily="Comic Sans MS" HorizontalAlignment="Center" VerticalAlignment="Top" TextAlignment="Center" Margin="0,55,0,0" Height="21" Width="140"></TextBlock>
+                    <Button Background="#00000000" HorizontalAlignment="Center" Width="130" Click="Button_Click" Height="143"/>
+                </Grid>
+
+
+
+
+            </Grid>
+
+
+
+        </Grid>
+
+
+
     </Grid>
+
 </Page>

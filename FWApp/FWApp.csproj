@@ -122,6 +122,9 @@
     <Compile Include="Belønningsystem.xaml.cs">
       <DependentUpon>Belønningsystem.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kontakt.xaml.cs">
+      <DependentUpon>Kontakt.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login - Copy.xaml.cs">
       <DependentUpon>Login - Copy.xaml</DependentUpon>
     </Compile>
@@ -166,6 +169,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FitnessGuideMaskine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kontakt.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

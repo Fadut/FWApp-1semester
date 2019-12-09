@@ -26,5 +26,10 @@ namespace FWApp
         {
             this.InitializeComponent();
         }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

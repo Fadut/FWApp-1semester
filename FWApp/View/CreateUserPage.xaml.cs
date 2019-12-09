@@ -20,15 +20,14 @@ namespace FWApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Forside : Page
+    public sealed partial class CreateUserPage : Page
     {
-        public Forside()
+        public CreateUserPage()
         {
             this.InitializeComponent();
         }
 
-
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        private void InitializeComponent()
         {
             throw new NotImplementedException();
         }

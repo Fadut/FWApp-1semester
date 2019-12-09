@@ -119,11 +119,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FitnessGuide.xaml.cs">
-      <DependentUpon>FitnessGuide.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="FitnessGuideMaskine.xaml.cs">
-      <DependentUpon>FitnessGuideMaskine.xaml</DependentUpon>
+    <Compile Include="Forside.xaml.cs">
+      <DependentUpon>Forside.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -168,6 +165,11 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.9</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="View\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

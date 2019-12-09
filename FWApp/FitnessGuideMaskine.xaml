@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="FWApp.FitnessGuideMaskine"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FWApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#6E6E6E">
+        <Grid BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Background="#FF4D4D4D" Height="72">
+            <TextBlock Text="Vælg Maskine" FontSize="30" TextAlignment="Center" FontFamily="Comic Sans MS" Foreground="#FF33FF33" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" Width="300" Margin="66, 15, 66, 0"/>
+            <Button Content="🡐" FocusVisualPrimaryBrush="#00121212" Foreground="#FFD4D4D4" Background="#00000000" FontFamily="Comic Sans MS" FontSize="50" Height="76" Width="66" VerticalAlignment="Top" Margin="0, 4, 0, 0"/>
+            <Button Content="☰" FontSize="35" Background="#00000000" Margin="369, 0, 0, 0" VerticalAlignment="Top" HorizontalAlignment="Right" Height="72" Width="63" Foreground="#FFD4D4D4"/>
+        </Grid>
+        <Grid Margin="0,70,0,5" Background="Gray">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Background="LightGray" Margin="0,30,0,630" Width="386">
+                <TextBlock Text="Ben" FontSize="20" TextAlignment="Center" HorizontalAlignment="Left" Height="31"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Background="LightGray" Margin="0,90,0,570" Width="386">
+                <TextBlock Text="Leg press" FontSize="20" TextAlignment="Center" HorizontalAlignment="Left" Height="31"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Background="LightGray" Margin="0,170,0,20" Width="386">
+                <TextBlock Text="Leg Press" FontSize="30" TextAlignment="Center" HorizontalAlignment="Center" Height="47" FontFamily="Comic Sans MS"/>
+                <StackPanel Background="White" Margin="0,10,0,0" Height="226">
+                    <Image Source="Assets/VideoStart.png" Height="226"/>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock Text="Blahaha bla ha ha, bla hha haha , bla" FontSize="15" FontFamily="Comic Sans MS"/>
+                    <TextBlock Text="Det her kan bla bla ha, og også det ved alle" FontSize="15" FontFamily="Comic Sans MS"/>
+                    <TextBlock Text="Blahaha bla ha ha, bla hha haha , bla ah aha ha aha" FontSize="15" Margin="0,10,0,0" FontFamily="Comic Sans MS"/>
+                    <TextBlock Text="The bitch is back bla bla ha, sniffing pots of glue bla" FontSize="15" FontFamily="Comic Sans MS"/>
+                    <TextBlock Text="Blahaha bla ha ha, bla hha haha , bla" FontSize="15" FontFamily="Comic Sans MS"/>
+                    <TextBlock Text="Hvorfor gør jeg alt bla bla ha, er der nogen mening i bla" FontSize="15" FontFamily="Comic Sans MS"/>
+                    <TextBlock Text="Nu ved du hvordan man træne med Leg Press" FontSize="15" Margin="0,15,0,0" FontFamily="Comic Sans MS"/>
+                    <TextBlock Text="Og med det kan du pisse af" FontSize="15" FontFamily="Comic Sans MS"/>
+                </StackPanel>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Page>

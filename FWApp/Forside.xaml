@@ -9,52 +9,75 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
         <Grid Background="#6E6E6E">
             <Grid BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Background="#FF4D4D4D" Height="72">
                 <TextBlock Text="Hej, bruger" FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Comic Sans MS" Foreground="#FF33FF33" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" Width="300" Margin="66,15,66,0"/>
                 <Button Content="🡐" FocusVisualPrimaryBrush="#00121212" Foreground="#FFD4D4D4" Background="#00000000" FontFamily="Comic Sans MS" FontSize="50" Height="76" Width="66" VerticalAlignment="Top" Margin="0,-4,0,0"/>
                 <Button Content="☰" FontSize="35" Background="#00000000" Margin="369,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Right"  Height="72" Width="63" Foreground="#FFD4D4D4"/>
+                <!--Could also be a HamburgerMenu/NavigationView? The button above. Vi skal give knapperne en funktion. HUSK.-->
             </Grid>
 
-            <Grid Margin="0,70,0,384" Background="#E8E8E8">
+            <ScrollViewer>
 
-                <Grid>
+                <Grid Margin="0,70,0,384" Background="#E8E8E8" Height="800">
+
+                    <Grid VerticalAlignment="Top" Height="110" Margin="0, 5, 0, 0">
+                        <TextBlock Text="NEWS OG TILBUD" FontSize="26" TextAlignment="Center" FontFamily="Comic Sans MS" Foreground="Black" VerticalAlignment="Center" Margin="0, -4, 0, 0"/>
+                        <!--Add arrows on left and right side of the text, to indicate you are able to scroll.-->
+                        <Button Content="🡐" Foreground="#FF33FF33" Background="#E8E8E8 " FontFamily="Comic Sans MS" FontSize="30" HorizontalAlignment="Left" Margin="0, -4, 0, 0"/>
+                        <Button Content="→" Foreground="#FF33FF33" Background="#E8E8E8" FontFamily="Comic Sans MS" FontSize="30" HorizontalAlignment="Right" Margin="0, -4, 0, 0"/>
+                    </Grid>
+
+
+                    <Grid VerticalAlignment="Center" Height="260" Margin="15, 0, 0, 420">
+
+                        <Grid HorizontalAlignment="Left" Height="70" Width="150" Margin="15, 0, 0, 15">
+                            <TextBlock Text="Fitness Niveau" FontSize="22" TextAlignment="Left" FontFamily="Comic Sans MS" Foreground="Black" VerticalAlignment="Center"/>
+                        </Grid>
+
+
+                        <Grid HorizontalAlignment="Right" Height="150" Width="220" Margin="0, 100, 20, 0">
+                            <!--INSERT PICTURE OF FITNESS LEVEL INSIDE THIS GRID-->
+                            <Image Source="Assets/niveaulogo.png"/>
+                        </Grid>
+                    </Grid>
+
+
+                    <Grid VerticalAlignment="Bottom" Height="380" Margin="15, 0, 0, 80">
+
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100, 100, 100, 100">
+                            <Image Source="Assets/linklogo.png" />
+                        </StackPanel>
+
+                        <StackPanel>
+                        </StackPanel>
+
+                        <StackPanel>
+                        </StackPanel>
+
+                        <StackPanel>
+                        </StackPanel>
+
+                        <StackPanel>
+                        </StackPanel>
+
+                        <StackPanel>
+                        </StackPanel>
+
+                        <!--INSERT OPTIONS AND LINKS TO OTHER PAGES INSIDE THIS GRID. Skal links være billeder som man kan trykke på?-->
+                    </Grid>
+
+
+
+
+
 
 
 
                 </Grid>
 
-                <Grid>
-
-                </Grid>
-
-                <Grid>
-
-                </Grid>
-
-            </Grid>
-
-
-
-
-
-
+            </ScrollViewer>
         </Grid>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     </Grid>

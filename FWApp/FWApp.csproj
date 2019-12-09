@@ -119,6 +119,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Assets\Model\EquipmentClass.cs" />
+    <Compile Include="Assets\Model\ProfileClass.cs" />
+    <Compile Include="Assets\Model\UserClass.cs" />
     <Compile Include="Belønningsystem.xaml.cs">
       <DependentUpon>Belønningsystem.xaml</DependentUpon>
     </Compile>
@@ -187,6 +190,8 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Assets\ViewModel\" />
+    <Folder Include="Assets\View\" />
     <Folder Include="Model\" />
     <Folder Include="ViewModel\" />
     <Folder Include="View\" />

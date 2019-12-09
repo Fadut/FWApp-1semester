@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FWApp.Assets.Model
+namespace FWApp.Model
 {
-    class ProfileClass
+    public class Profile
     {
         #region Instance Fields
 
         private int _fitnessNiveau;
-
         private int _currentXp;
 
         #endregion
@@ -23,7 +22,7 @@ namespace FWApp.Assets.Model
             get { return _fitnessNiveau; }
         }
 
-        public int currentXp
+        public int CurrentXp
         {
             get { return _currentXp; }
         }

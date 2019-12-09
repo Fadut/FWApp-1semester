@@ -4,20 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FWApp.Assets.Model
+namespace FWApp.Model
 {
-    class UserClass
+    public class User
     {
         #region Instance Fields
 
         private string _name;
-
         private int _phoneNumber;
-
         private string _address;
-
         private string _email;
-
         private string _password;
 
         #endregion
@@ -51,6 +47,6 @@ namespace FWApp.Assets.Model
 
         #endregion
 
-        //
+        
     }
 }

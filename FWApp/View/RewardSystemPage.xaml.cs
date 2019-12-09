@@ -20,17 +20,23 @@ namespace FWApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Belønningsystem : Page
+    public sealed partial class RewardSystemPage : Page
     {
-        public Belønningsystem()
+        public RewardSystemPage()
         {
             this.InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Frame.NavigateToType(typeof(Kontakt), null, new FrameNavigationOptions());
+            Frame.NavigateToType(typeof(ContactPage), null, new FrameNavigationOptions());
             
         }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

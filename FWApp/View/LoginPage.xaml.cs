@@ -27,7 +27,7 @@ namespace FWApp
             this.InitializeComponent();
         }
 
-        private void InitializeComponent()
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
         {
             throw new NotImplementedException();
         }

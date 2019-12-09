@@ -122,9 +122,9 @@
     <Compile Include="View\EquipmentGuidePage.xaml.cs">
       <DependentUpon>EquipmentGuidePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\EquipmentClass.cs" />
-    <Compile Include="Model\ProfileClass.cs" />
-    <Compile Include="Model\UserClass.cs" />
+    <Compile Include="Model\Equipment.cs" />
+    <Compile Include="Model\Profile.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="View\RewardSystemPage.xaml.cs">
       <DependentUpon>RewardSystemPage.xaml</DependentUpon>
     </Compile>
@@ -132,7 +132,7 @@
       <DependentUpon>ContactPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CreateUserPage.xaml.cs" />
-    <Compile Include="View\Login.xaml.cs" />
+    <Compile Include="View\LoginPage.xaml.cs" />
     <Compile Include="View\FrontPage.xaml.cs" />
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>

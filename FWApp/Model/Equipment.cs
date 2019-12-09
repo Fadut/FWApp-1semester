@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FWApp.Assets.Model
+namespace FWApp.Model
 {
-    class EquipmentClass
+    public class Equipment
     {
         private int _iD;
         private string _name;
         private string _muscleGroup;
         private string _description;
 
-        public EquipmentClass(int iD, string name, string musclegroup, string description)
+        public Equipment(int iD, string name, string musclegroup, string description)
         {
             _iD = iD;
             _name = name;

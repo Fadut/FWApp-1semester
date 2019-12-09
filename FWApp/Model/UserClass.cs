@@ -18,6 +18,38 @@ namespace FWApp.Assets.Model
 
         private string _email;
 
+        private string _password;
+
         #endregion
+
+        #region Properties
+
+        public string Name
+        {
+            get { return _name; }
+        }
+
+        public int PhoneNumber
+        {
+            get { return _phoneNumber; }
+        }
+
+        public string Address
+        {
+            get { return _address; }
+        }
+
+        public string Email
+        {
+            get { return _email; }
+        }
+        
+        public string Password
+        {
+            get { return _password; }
+        }
+
+        #endregion
+
     }
 }

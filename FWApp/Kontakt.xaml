@@ -8,7 +8,17 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="#6E6E6E">
+        <Grid BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Background="#FF4D4D4D" Height="72">
+            <TextBlock Text="Kontakt &amp; Hjælp" FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Comic Sans MS" Foreground="#FF33FF33" VerticalAlignment="Top" Width="300" Margin="66,15,66,0"/>
+            <Button Content="🡐" FocusVisualPrimaryBrush="#00121212" Foreground="#FFD4D4D4" Background="#00000000" FontFamily="Comic Sans MS" FontSize="50" Height="76" Width="66" VerticalAlignment="Top" Margin="0,-4,0,0" Click="Button_Click_1"/>
+            <Button Content="☰" FontSize="35" Background="#00000000" Margin="369,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Right"  Height="72" Width="63" Foreground="#FFD4D4D4"/>
+        </Grid>
 
+        <ScrollViewer Margin="0,72,0,0">
+            <Grid Margin="0,0,0,445" Background="#FF33FF33" BorderThickness="1.2" BorderBrush="Black" Height="281">
+                <Button Content="Hello" Click="Button_Click" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top"></Button>
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </Page>

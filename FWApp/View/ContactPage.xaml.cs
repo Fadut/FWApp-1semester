@@ -20,9 +20,9 @@ namespace FWApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Kontakt : Page
+    public sealed partial class ContactPage : Page
     {
-        public Kontakt()
+        public ContactPage()
         {
             this.InitializeComponent();
         }
@@ -31,5 +31,18 @@ namespace FWApp
         {
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+
+
     }
 }

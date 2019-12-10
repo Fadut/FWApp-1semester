@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="FWApp.FitnessGuidePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FWApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#6E6E6E">
+        <Grid BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Background="#FF4D4D4D" Height="72">
+            <TextBlock Text="Fitness Guide" FontSize="30" FontWeight="Bold" TextAlignment="Center" FontFamily="Comic Sans MS" Foreground="#FF33FF33" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" Width="300" Margin="66, 15, 66, 0"/>
+            <Button Content="🡐" FocusVisualPrimaryBrush="#00121212" Foreground="#FFD4D4D4" Background="#00000000" FontFamily="Comic Sans MS" FontSize="50" Height="76" Width="66" VerticalAlignment="Top" Margin="0, -4, 0, 0"/>
+            <Button Content="☰" FontSize="35" Background="#00000000" Margin="369, 0, 0, 0" VerticalAlignment="Top" HorizontalAlignment="Right" Height="72" Width="63" Foreground="#FFD4D4D4"/>
+        </Grid>
+        <Grid Margin="0, 70, 0, 54" Background="#E8E8E8">
+            <Button Content="Vælg Muskelgruppe" Background="#D4D4D4" BorderBrush="Black" BorderThickness="1.2" FontSize="30" FontFamily="Comic Sans MS" Click="Button_Click" Margin="0,90,0,0" VerticalAlignment="Top" Height="139" Width="300" HorizontalAlignment="Center"/>
+            <TextBlock Text="Eller" FontSize="40" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Grid Background="#D4D4D4" BorderBrush="Black" BorderThickness="1.2" Margin="62,393,62,0" VerticalAlignment="Top" Height="80">
+                <TextBlock Text="Indtast Maskine ID" TextAlignment="Center" FontSize="30" FontFamily="Comic Sans MS" Margin="0,10,0,10"/>
+            </Grid>
+            <Grid>
+                <TextBox Text="ID..." FontFamily="Comic Sans MS" FontSize="25" TextAlignment="Left" VerticalAlignment="Top" Margin="63,472,157,0" Height="52"/>
+                <Button Content="Søg" FontFamily="Comic Sans MS" FontSize="25" VerticalAlignment="Top" Margin="274,473,0,0" Height="51" Width="97"/>
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Page>

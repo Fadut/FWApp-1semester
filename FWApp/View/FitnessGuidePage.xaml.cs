@@ -20,17 +20,21 @@ namespace FWApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Forside : Page
+    public sealed partial class FitnessGuidePage : Page
     {
-        public Forside()
+        public FitnessGuidePage()
         {
             this.InitializeComponent();
         }
 
-
         private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

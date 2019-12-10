@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace FWApp.Model
 {
-    class Catolog
+    class Catalog
     {
         private List<Equipment> _maskiner;
 
-        public Catolog()
+        public Catalog()
         {
             _maskiner = new List<Equipment>();
 

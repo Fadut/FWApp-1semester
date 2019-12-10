@@ -13,11 +13,11 @@ namespace FWApp.Model
         private string _muscleGroup;
         private string _description;
 
-        public Equipment(int iD, string name, string musclegroup, string description)
+        public Equipment(int iD, string name, string muscleGroup, string description)
         {
             _iD = iD;
             _name = name;
-            _muscleGroup = musclegroup;
+            _muscleGroup = muscleGroup;
             _description = description;
         }
 
@@ -33,7 +33,7 @@ namespace FWApp.Model
             set { _name = value; }
         }
 
-        public string Musclegroup
+        public string MuscleGroup
         {
             get { return _muscleGroup; }
             set { _muscleGroup = value; }
@@ -47,7 +47,7 @@ namespace FWApp.Model
 
         public override string ToString()
         {
-            return $"{nameof(ID)}: {ID}, {nameof(Name)}: {Name}, {nameof(Musclegroup)}: {Musclegroup}, {nameof(Description)}: {Description}";
+            return $"{nameof(ID)}: {ID}, {nameof(Name)}: {Name}, {nameof(MuscleGroup)}: {MuscleGroup}, {nameof(Description)}: {Description}";
         }
     }
 }

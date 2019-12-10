@@ -120,7 +120,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Common\RelayCommand.cs" />
-    <Compile Include="Model\Catolog.cs" />
+    <Compile Include="Model\Catalog.cs" />
     <Compile Include="ViewModel\ForsideVM.cs" />
     <Compile Include="View\BusynessView.xaml.cs">
       <DependentUpon>BusynessView.xaml</DependentUpon>

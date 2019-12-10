@@ -121,6 +121,7 @@
     </Compile>
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Model\Catolog.cs" />
+    <Compile Include="Model\Post.cs" />
     <Compile Include="ViewModel\BaseVM.cs" />
     <Compile Include="ViewModel\EquipmentGuideVM.cs" />
     <Compile Include="ViewModel\FitnessGuideVM.cs" />

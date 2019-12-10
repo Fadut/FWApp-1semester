@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FWApp.ViewModel
+namespace FWApp.Common
 {
-    class ForsideVM
+    class FitnessGuide_RC
     {
 
 

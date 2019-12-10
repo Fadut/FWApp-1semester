@@ -119,6 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\FitnessGuide_RC.cs" />
     <Compile Include="ViewModel\ForsideVM.cs" />
     <Compile Include="View\EquipmentGuidePage.xaml.cs">
       <DependentUpon>EquipmentGuidePage.xaml</DependentUpon>

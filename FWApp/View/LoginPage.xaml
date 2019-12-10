@@ -8,15 +8,23 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="54,357,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="575" SelectionChanged="TextBlock_SelectionChanged"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,257,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" Height="72"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,398,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" Height="70"/>
-        <Button Content="Log ind" Margin="103,549,0,0" VerticalAlignment="Top" FontSize="20" Width="206" Height="60" RenderTransformOrigin="0.435,-1.152"/>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="637*"/>
+            <RowDefinition Height="131*"/>
+        </Grid.RowDefinitions>
+
+
+        <TextBlock HorizontalAlignment="Left"  Margin="54,357,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="575" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBox x:Name="Email" PlaceholderText="Email" HorizontalAlignment="Center" Margin="0,257,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="332" Height="72" TextChanged="Email_TextChanged"/>
+        <TextBox x:Name="Password" PlaceholderText="Password" HorizontalAlignment="Center" Margin="0,398,0,0"   TextWrapping="Wrap" VerticalAlignment="Top" Width="328" Height="70" TextChanged="Password_TextChanged"/>
+        <Button Content="Log ind" Margin="103,549,0,0" VerticalAlignment="Top" FontSize="20" Width="206" Height="60" RenderTransformOrigin="0.435,-1.152" Click="Button_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="43,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="576"><Run Text="   "/><Run Text=" "/><Run Text="Email"/></TextBlock>
-        <Button Content="Opret Bruger" Margin="0,689,0,0" VerticalAlignment="Top" Width="431" FontSize="20" Height="73" HorizontalAlignment="Center"/>
-        <Image HorizontalAlignment="Left" Height="209" Margin="-391,-12,0,0" VerticalAlignment="Top" Source="Billeder/Fitness.jpg"  Width="1379"/>
+        <Button Content="Opret Bruger" Margin="0,52,0,0" VerticalAlignment="Top" Width="431" FontSize="20" Height="73" HorizontalAlignment="Center" Grid.Row="1" Click="Button_Click_1"/>
+
         <CheckBox Content="Husk mig" Margin="61,492,0,0" VerticalAlignment="Top"/>
+        <Image Source="/Assets/Fitness.jpg" Height="124" Margin="-5,4,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="430"/>
 
     </Grid>
+
 </Page>

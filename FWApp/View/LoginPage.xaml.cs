@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -31,5 +32,42 @@ namespace FWApp
         {
             throw new NotImplementedException();
         }
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            if ((Email.Text == "Admin") && (Password.Text == "admin"))
+            {
+
+                this.Frame.Navigate(typeof(FrontPage), null);
+
+
+            }
+            else
+            {
+                var dialog = new MessageDialog("Email eller Password er forkert");
+                await dialog.ShowAsync();
+            }
+
+        }
+
+        private void Email_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Password_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private  void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(CreateUserPage), null);
+        }
     }
 }
+
+
+
+

@@ -20,11 +20,13 @@ namespace FWApp.Model
         public int FitnessNiveau
         {
             get { return _fitnessNiveau; }
+            set { _fitnessNiveau = value; }
         }
 
         public int CurrentXp
         {
             get { return _currentXp; }
+            set { _currentXp = value; }
         }
 
         #endregion

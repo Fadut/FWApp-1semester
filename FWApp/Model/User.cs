@@ -28,21 +28,25 @@ namespace FWApp.Model
         public int PhoneNumber
         {
             get { return _phoneNumber; }
+            set { _phoneNumber = value; }
         }
 
         public string Address
         {
             get { return _address; }
+            set { _address = value; }
         }
 
         public string Email
         {
             get { return _email; }
+            set { _email = value; }
         }
         
         public string Password
         {
             get { return _password; }
+            set { _password = value; }
         }
 
         #endregion

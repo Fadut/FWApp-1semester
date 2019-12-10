@@ -38,15 +38,21 @@
 
                         <Grid HorizontalAlignment="Right" Height="150" Width="220" Margin="0, 100, 20, 0">
                             <!--INSERT PICTURE OF FITNESS LEVEL INSIDE THIS GRID-->
-                            <Image Source="Assets/niveaulogo.png"/>
+                            <Image Source="../Assets/niveaulogo.png"/>
                         </Grid>
                     </Grid>
 
 
                     <Grid VerticalAlignment="Bottom" Height="380" Margin="15, 0, 0, 80">
 
-                        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100, 100, 100, 100">
-                            <Image Source="Assets/linklogo.png" />
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15, 15, 0, 0" Height="116" Width="56">
+                            <Image Source="../Assets/linklogo.png"/>
+                            <TextBlock Text="Fitness Guide" FontSize="12" TextAlignment="Center" FontFamily="Comic Sans MS" Foreground="Black" VerticalAlignment="Center" Width="100"  />
+
+                        </StackPanel>
+
+                        <StackPanel>
+
                         </StackPanel>
 
                         <StackPanel>
@@ -56,14 +62,11 @@
                         </StackPanel>
 
                         <StackPanel>
-                        </StackPanel>
 
-                        <StackPanel>
+                            <StackPanel>
 
-                          <StackPanel>
-                            
-                          </StackPanel>
-                          
+                            </StackPanel>
+
                         </StackPanel>
 
                         <StackPanel>

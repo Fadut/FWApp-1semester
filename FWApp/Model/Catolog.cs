@@ -14,30 +14,27 @@ namespace FWApp.Model
         {
             _maskiner = new List<Equipment>();
 
-            _maskiner.Add(new Equipment(1, "Push Ups", "Arm", "Du skal..."));
-            _maskiner.Add(new Equipment(2, "Leg Push", "Ben", "Her er det vigtigt, at..."));
-            _maskiner.Add(new Equipment(3, "Bench Press", "Arm", "Her er det vigtigt, at..."));
-            _maskiner.Add(new Equipment(4, "Hammer", "Ryg", "Husk at på denne, skal du..."));
-            _maskiner.Add(new Equipment(5, "Push Ups", "Arm", "Du skal..."));
-            _maskiner.Add(new Equipment(6, "Leg Push", "Ben", "Her er det vigtigt, at..."));
-            _maskiner.Add(new Equipment(7, "Leg Push", "Ben", "Her er det vigtigt, at..."));
-            _maskiner.Add(new Equipment(8, "Hammer", "Ryg", "Husk at på denne, skal du..."));
-            _maskiner.Add(new Equipment(9, "Push Ups", "Arm", "Du skal..."));
-            _maskiner.Add(new Equipment(10, "Leg Push", "Ben", "Her er det vigtigt, at..."));
-            _maskiner.Add(new Equipment(11, "Leg Push", "Ben", "Her er det vigtigt, at..."));
-            _maskiner.Add(new Equipment(12, "Hammer", "Ryg", "Husk at på denne, skal du..."));
-            _maskiner.Add(new Equipment(13, "Push Ups", "Arm", "Du skal..."));
-            _maskiner.Add(new Equipment(14, "Leg Push", "Ben", "Her er det vigtigt, at..."));
-            _maskiner.Add(new Equipment(15, "Leg Push", "Ben", "Her er det vigtigt, at..."));
-            _maskiner.Add(new Equipment(16, "Hammer", "Ryg", "Husk at på denne, skal du..."));
-            _maskiner.Add(new Equipment(17, "Push Ups", "Arm", "Du skal..."));
-            _maskiner.Add(new Equipment(18, "Leg Push", "Ben", "Her er det vigtigt, at..."));
-            _maskiner.Add(new Equipment(19, "Leg Push", "Ben", "Her er det vigtigt, at..."));
-            _maskiner.Add(new Equipment(20, "Hammer", "Ryg", "Husk at på denne, skal du..."));
+            _maskiner.Add(new Equipment(1, "Chest Press", "Bryst", "Du skal..."));
+            _maskiner.Add(new Equipment(2, "Leg Press", "Ben", "Her er det vigtigt, at..."));
+            _maskiner.Add(new Equipment(3, "Fly/Rear Delt", "Arm", "Her er det vigtigt, at..."));
+            _maskiner.Add(new Equipment(4, "Abdominal", "Mave", "Husk at på denne, skal du..."));
+            _maskiner.Add(new Equipment(5, "Back Extension", "Ryg", "Du skal..."));
+            _maskiner.Add(new Equipment(6, "Leg Extension", "Ben", "Her er det vigtigt, at..."));
+            _maskiner.Add(new Equipment(7, "Seated Leg Curl", "Ben", "Her er det vigtigt, at..."));
+            _maskiner.Add(new Equipment(8, "Hip Abduction Hip Adduction", "Ben", "Husk at på denne, skal du..."));
+            _maskiner.Add(new Equipment(9, "Pulldown", "Ryg", "Du skal..."));
+            _maskiner.Add(new Equipment(10, "Glute", "Ben", "Her er det vigtigt, at..."));
+            _maskiner.Add(new Equipment(11, "Row", "Ryg", "Her er det vigtigt, at..."));
+            _maskiner.Add(new Equipment(12, "Bravo Pull", "Ryg", "Husk at på denne, skal du..."));
+            _maskiner.Add(new Equipment(13, "Lat Pulldown", "Ryg", "Du skal..."));
+            _maskiner.Add(new Equipment(14, "Iso-Lateral Super Incline Press", "Bryst", "Her er det vigtigt, at..."));
+            _maskiner.Add(new Equipment(15, "Iso-Lateral High Row", "Ryg", "Her er det vigtigt, at..."));
+            _maskiner.Add(new Equipment(16, "Linear Leg Press", "Ben", "Husk at på denne, skal du..."));
+            _maskiner.Add(new Equipment(17, "Adjustable Cable Crossover", "Arm", "Du skal..."));
+            _maskiner.Add(new Equipment(18, "Dual Pulley Pulldown", "Ryg", "Her er det vigtigt, at..."));
+            _maskiner.Add(new Equipment(19, "Dual Pulley Row", "Ryg", "Her er det vigtigt, at..."));
+            _maskiner.Add(new Equipment(20, "Adjustable Pulley", "Arm", "Husk at på denne, skal du..."));
             _maskiner.Add(new Equipment(21, "Push Ups", "Arm", "Du skal..."));
-            _maskiner.Add(new Equipment(22, "Leg Push", "Ben", "Her er det vigtigt, at..."));
-            _maskiner.Add(new Equipment(23, "Leg Push", "Ben", "Her er det vigtigt, at..."));
-            _maskiner.Add(new Equipment(24, "Hammer", "Ryg", "Husk at på denne, skal du..."));
         }
 
     }

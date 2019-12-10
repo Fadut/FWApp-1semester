@@ -16,6 +16,7 @@ namespace FWApp.Model
         // (default) Constructor
         public FitnessCentre(double startHour, double endHour, string adress)
         {
+            //kfkfsj
             _startHour = startHour;
             _endHour = endHour;
             _adress = adress;

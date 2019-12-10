@@ -9,14 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Margin="0,526,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="575" SelectionChanged="TextBlock_SelectionChanged"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,437,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" Height="58"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,567,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" Height="58"/>
-        <Button Content="Log ind" Margin="649,686,0,0" VerticalAlignment="Top" FontSize="20" Width="206" Height="60"/>
-        <TextBlock HorizontalAlignment="Left" Margin="452,395,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="576"><Run Text="   "/><Run Text=" "/><Run Text="Email"/></TextBlock>
-        <Button Content="Opret Bruger" Margin="0,915,0,0" VerticalAlignment="Top" Width="1479" FontSize="20" Height="75" HorizontalAlignment="Center"/>
-        <Image HorizontalAlignment="Left" Height="298" Margin="189,12,0,0" VerticalAlignment="Top" Source="Billeder/Fitness.jpg"  Width="1502"/>
-        <CheckBox Content="Husk mig" Margin="449,650,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="54,357,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="575" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,257,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" Height="72"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,398,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" Height="70"/>
+        <Button Content="Log ind" Margin="103,549,0,0" VerticalAlignment="Top" FontSize="20" Width="206" Height="60" RenderTransformOrigin="0.435,-1.152"/>
+        <TextBlock HorizontalAlignment="Left" Margin="43,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="576"><Run Text="   "/><Run Text=" "/><Run Text="Email"/></TextBlock>
+        <Button Content="Opret Bruger" Margin="0,689,0,0" VerticalAlignment="Top" Width="431" FontSize="20" Height="73" HorizontalAlignment="Center"/>
+        <Image HorizontalAlignment="Left" Height="209" Margin="-391,-12,0,0" VerticalAlignment="Top" Source="Billeder/Fitness.jpg"  Width="1379"/>
+        <CheckBox Content="Husk mig" Margin="61,492,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

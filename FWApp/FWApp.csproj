@@ -123,6 +123,7 @@
     <Compile Include="Model\Catolog.cs" />
     <Compile Include="ViewModel\EquipmentGuideVM.cs" />
     <Compile Include="ViewModel\FitnessGuideVM.cs" />
+    <Compile Include="Model\FitnessCentre.cs" />
     <Compile Include="ViewModel\ForsideVM.cs" />
     <Compile Include="View\BusynessView.xaml.cs">
       <DependentUpon>BusynessView.xaml</DependentUpon>

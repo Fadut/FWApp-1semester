@@ -135,7 +135,6 @@
                     <Rectangle Fill="#ffa500"></Rectangle>
                 </Border>
             </Grid>
-
         </Grid>
     </Grid>
 </Page>

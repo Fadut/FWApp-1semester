@@ -1,0 +1,141 @@
+﻿<Page
+    x:Class="FWApp.View.BusynessView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FWApp.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <Style x:Key="BorderStyle" TargetType="Border">
+            <Setter Property="BorderBrush" Value="Black"></Setter>
+            <Setter Property="BorderThickness" Value="1.0"></Setter>
+            <Setter Property="CornerRadius" Value="15"></Setter>
+        </Style>
+        <Style x:Key="textFont" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="Foreground" Value="Black"></Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.10*"></RowDefinition>
+            <RowDefinition Height="0.15*"></RowDefinition>
+            <RowDefinition Height="0.10*"></RowDefinition>
+            <RowDefinition Height="0.65*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#FF4D4D4D">
+            <TextBlock Foreground="#FF33FF33" Text="Travlhed" FontFamily="Comic Sans MS" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock Text="Back" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+            <TextBlock Text="Menu" HorizontalAlignment="right" VerticalAlignment="Center"></TextBlock>
+        </Grid>
+
+        <Grid Grid.Row="1" Background="#6E6E6E">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.30*"></ColumnDefinition>
+                <ColumnDefinition Width="0.70*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Style="{StaticResource textFont}" Grid.Column="0" Text="Live:" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+
+            <Rectangle RadiusX="20" RadiusY="100" Grid.Column="1" MaxHeight="45" Margin="0,0,10,0">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="#00cc00" Offset="0.0"></GradientStop>
+                        <GradientStop Color="#ffa500" Offset="0.5"></GradientStop>
+                        <GradientStop Color="#ff0000" Offset="1.0"></GradientStop>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <ProgressBar Margin="0,0,10,0" Grid.Column="1" Value="45" Foreground="WhiteSmoke" Height="10" Opacity="0.80"></ProgressBar>
+        </Grid>
+
+        <Rectangle Grid.Row="2" Fill="#FF4D4D4D"></Rectangle>
+
+        <Grid  Grid.Row="3" Background="#6E6E6E">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.15*"></RowDefinition>
+                <RowDefinition Height="0.40*"></RowDefinition>
+                <RowDefinition Height="0.30*"></RowDefinition>
+                <RowDefinition Height="0.15*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Foreground="Black" FontSize="18" Text="Vores trafik plejer at se sådan ud:" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+
+            <Grid Grid.Row="1" Margin="10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <TextBlock Style="{StaticResource textFont}" Text="5-9:" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" ></TextBlock>
+                <Border Grid.Column="1" Grid.Row="0" Style="{StaticResource BorderStyle}">
+                    <Rectangle Fill="#00cc00"></Rectangle>
+                </Border>
+
+                <TextBlock Style="{StaticResource textFont}" Text="9-12:" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center"></TextBlock>
+                <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource BorderStyle}">
+                    <Rectangle Fill="#00cc00" Grid.Column="1" Grid.Row="1"></Rectangle>
+                </Border>
+
+                <TextBlock Style="{StaticResource textFont}" Text="12-15:" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center"></TextBlock>
+                <Border Grid.Column="1" Grid.Row="2" Style="{StaticResource BorderStyle}">
+                    <Rectangle Fill="#ff0000"></Rectangle>
+                </Border>
+
+                <TextBlock Style="{StaticResource textFont}" Text="15-18:" Grid.Column="3" Grid.Row="0" VerticalAlignment="Center"></TextBlock>
+                <Border Grid.Column="4" Grid.Row="0" Style="{StaticResource BorderStyle}">
+                    <Rectangle Fill="#ffa500"></Rectangle>
+                </Border>
+
+                <TextBlock Style="{StaticResource textFont}" Text="18-21:" Grid.Column="3" Grid.Row="1" VerticalAlignment="Center"></TextBlock>
+                <Border Grid.Column="4" Grid.Row="1" Style="{StaticResource BorderStyle}">
+                    <Rectangle Fill="#00cc00"></Rectangle>
+                </Border>
+
+                <TextBlock Style="{StaticResource textFont}" Text="21-00:" Grid.Column="3" Grid.Row="2" VerticalAlignment="Center"></TextBlock>
+                <Border Grid.Column="4" Grid.Row="2" Style="{StaticResource BorderStyle}">
+                    <Rectangle Fill="#00cc00"></Rectangle>
+                </Border>
+
+            </Grid>
+            <Grid Padding="0,20" Grid.Row="2" HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <TextBlock Style="{StaticResource textFont}" Text="Meget Travlt" Margin="10,0" Grid.Column="0" Grid.Row="0" TextWrapping="WrapWholeWords" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom"></TextBlock>
+                <Border Margin="5,0" Style="{StaticResource BorderStyle}" Grid.Column="0" Grid.Row="1">
+                    <Rectangle Fill="#ff0000"></Rectangle>
+                </Border>
+
+                <TextBlock Style="{StaticResource textFont}" Text="Ikke Travlt" Margin="10,0" Grid.Column="1" Grid.Row="0" TextWrapping="WrapWholeWords" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom"></TextBlock>
+                <Border Margin="5,0" Style="{StaticResource BorderStyle}" Grid.Column="1" Grid.Row="1">
+                    <Rectangle Fill="#00cc00"></Rectangle>
+                </Border>
+
+                <TextBlock Style="{StaticResource textFont}" Margin="10,0" Text="Lidt Travlt" Grid.Column="2" Grid.Row="0" TextWrapping="WrapWholeWords" TextAlignment="Center" HorizontalAlignment="Center"  VerticalAlignment="Bottom"></TextBlock>
+                <Border Margin="10,0" Style="{StaticResource BorderStyle}" Grid.Column="2" Grid.Row="1">
+                    <Rectangle Fill="#ffa500"></Rectangle>
+                </Border>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Page>

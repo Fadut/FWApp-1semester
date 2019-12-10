@@ -9,21 +9,21 @@ namespace FWApp.Common
 {
     class RelayCommand : ICommand
     {
-        private Action _skiftSide;
+        private Action _metode;
 
-        public RelayCommand(Action skiftSide)
+        public RelayCommand(Action metode)
         {
-            _skiftSide = skiftSide;
+            _metode = metode;
         }
 
         public bool CanExecute(object parameter)
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public void Execute(object parameter)
         {
-            throw new NotImplementedException();
+            _metode();
         }
 
         public event EventHandler CanExecuteChanged;

@@ -2,14 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace FWApp.ViewModel
 {
-    public class FitnessGuideVM : INotifyPropertyChanged
+    public class FitnessGuideVM : BaseVM
     {
         private ObservableCollection<Equipment> equipments;
         private Equipment _chosenEquipment;

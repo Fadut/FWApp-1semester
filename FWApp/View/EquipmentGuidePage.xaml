@@ -21,7 +21,7 @@
         </Grid>
         <Grid Margin="0,70,0,5" Background="Gray">
             <StackPanel Orientation="Vertical" BorderBrush="Black" BorderThickness="1.2" HorizontalAlignment="Center" Background="LightGray" Margin="0,30,0,630" Width="386">
-                <TextBox Text="{Binding ChosenEquipment.Musclegroup}" TextAlignment="Left" TextWrapping="Wrap" FontSize="15" FontFamily="Comic Sans MS"/>
+                <TextBox Text="{Binding ChosenEquipment.MuscleGroup}" TextAlignment="Left" TextWrapping="Wrap" FontSize="15" FontFamily="Comic Sans MS"/>
             </StackPanel>
             <StackPanel Orientation="Vertical" BorderBrush="Black" BorderThickness="1.2" HorizontalAlignment="Center" Background="LightGray" Margin="0,90,0,570" Width="386">
                 <TextBox Text="{Binding ChosenEquipment.Name}" FontSize="15" TextAlignment="Left" TextWrapping="Wrap" FontFamily="Comic Sans MS"/>

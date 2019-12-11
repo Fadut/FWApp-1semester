@@ -37,7 +37,7 @@ namespace FWApp.ViewModel
         {
             equipments = new ObservableCollection<Equipment>();
 
-            _chosenEquipment = new Equipment(0, "Navn", "MuskelGruppe", "Forklaring");
+            _chosenEquipment = new Equipment(0, "Navn", "Muskel Gruppe", "Forklaring");
         }
 
 

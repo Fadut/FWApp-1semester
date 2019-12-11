@@ -10,7 +10,7 @@ namespace FWApp.Model
     {
         #region Instance Fields
 
-        private string _name = "hello";
+        private string _name;
         private int _phoneNumber;
         private string _address;
         private string _email;

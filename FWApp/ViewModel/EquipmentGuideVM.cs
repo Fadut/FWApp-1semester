@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace FWApp.ViewModel
 {
-    class EquipmentGuideVM
+    class EquipmentGuideVM : FitnessGuideVM
     {
+
     }
 }

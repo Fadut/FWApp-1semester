@@ -16,7 +16,7 @@
         </Grid>
 
         <ScrollViewer Margin="0,72,0,0">
-            <Grid Margin="0,0,0,445" Background="#FF33FF33" BorderThickness="1.2" BorderBrush="Black" Height="281">
+            <Grid Margin="0,0,0,445" Background="#FF33FF33" BorderThickness="1.2" BorderBrush="Black" Height="921">
                 <Button Content="Hello" Click="Button_Click" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top"></Button>
             </Grid>
         </ScrollViewer>

@@ -5,9 +5,14 @@
     xmlns:local="using:FWApp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local1="using:FWApp.ViewModel"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.DataContext>
+        <local1:FitnessGuideVM/>
+    </Page.DataContext>
+    
     <Grid Background="#6E6E6E">
         <Grid BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Background="#FF4D4D4D" Height="72">
             <TextBlock Text="Fitness Guide" FontSize="30" FontWeight="Bold" TextAlignment="Center" FontFamily="Comic Sans MS" Foreground="#FF33FF33" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" Width="300" Margin="66, 15, 66, 0"/>
@@ -21,7 +26,7 @@
                 <TextBlock Text="Indtast Maskine ID" TextAlignment="Center" FontSize="30" FontFamily="Comic Sans MS" Margin="0,10,0,10"/>
             </Grid>
             <Grid>
-                <TextBox Text="ID..." FontFamily="Comic Sans MS" FontSize="25" TextAlignment="Left" VerticalAlignment="Top" Margin="63,472,157,0" Height="52"/>
+                <TextBox Text="{Binding ChosenEquipment.ID, Mode=TwoWay}" FontFamily="Comic Sans MS" FontSize="25" TextAlignment="Left" VerticalAlignment="Top" Margin="63,472,157,0" Height="52"/>
                 <Button Content="Søg" FontFamily="Comic Sans MS" FontSize="25" VerticalAlignment="Top" Margin="274,473,0,0" Height="51" Width="97"/>
             </Grid>
 

@@ -7,27 +7,27 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    
-    
+
+
     <Grid Margin="0,5,0,0">
 
         <Button Content="🡐" FocusVisualPrimaryBrush="#00121212" Foreground="#FFD4D4D4" Background="#00000000" FontFamily="Comic Sans MS" FontSize="50" Height="76" Width="66" VerticalAlignment="Top" Margin="0,-4,0,0"/>
         <Button Content="☰" FontSize="35" Background="#00000000" Margin="0,-3,8,0" VerticalAlignment="Top" HorizontalAlignment="Right"  Height="84" Width="81" Foreground="#FFD4D4D4"/>
-        <TextBlock HorizontalAlignment="Left" Margin="456,217,0,0" Text="Telefone nr." TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="265" SelectionChanged="TextBlock_SelectionChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="449,142,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="647" Height="43"/>
-        <TextBox HorizontalAlignment="Left" Margin="451,253,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="645" Height="43"/>
-        <TextBlock HorizontalAlignment="Left" Margin="457,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="797" Text="Navn"/>
-        <Button Content="Opret Bruger" Margin="643,871,0,0" VerticalAlignment="Top" Width="299" FontSize="20" Height="75"/>
-        <TextBlock HorizontalAlignment="Left" Margin="454,430,0,0" Text="Email" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="264" SelectionChanged="TextBlock_SelectionChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="451,350,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="646" Height="42"/>
-        <TextBox HorizontalAlignment="Left" Margin="449,463,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="647" Height="42"/>
-        <TextBlock HorizontalAlignment="Left" Margin="449,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="374"><Run Text=" "/><Run Text=" Adresse"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="451,548,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="265" SelectionChanged="TextBlock_SelectionChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="447,584,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="644" Height="43"/>
-        <TextBlock HorizontalAlignment="Left" Margin="450,760,0,0" Text="Id nr." TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="263" SelectionChanged="TextBlock_SelectionChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="447,680,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="647" Height="43"/>
-        <TextBox HorizontalAlignment="Left" Margin="445,793,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="646" Height="43"/>
-        <TextBlock HorizontalAlignment="Left" Margin="445,651,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="374" Text="Genindtast Password"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,163,0,0" Text="Telefone nr." TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="265" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="39,114,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="317" Height="41"/>
+        <TextBox HorizontalAlignment="Left" Margin="41,191,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="318" Height="41"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="206" Text="Navn"/>
+        <Button Content="Opret Bruger" Margin="0,659,0,0" VerticalAlignment="Top" Width="269" FontSize="20" Height="68" HorizontalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,321,0,0" Text="Email" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="264" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="40,268,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="321" Height="40"/>
+        <TextBox HorizontalAlignment="Left" Margin="39,345,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="321" Height="42"/>
+        <TextBlock HorizontalAlignment="Left" Margin="38,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="374"><Run Text=" "/><Run Text=" Adresse"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="44,393,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="265" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="39,418,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" Height="41"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,549,0,0" Text="Id nr." TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="263" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="36,494,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" Height="41"/>
+        <TextBox HorizontalAlignment="Left" Margin="35,572,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" Height="41"/>
+        <TextBlock HorizontalAlignment="Left" Margin="39,470,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="374" Text="Genindtast Password"/>
         <ScrollViewer ZoomMode="Enabled" MaxZoomFactor="10"
               HorizontalScrollMode="Enabled" HorizontalScrollBarVisibility="Visible"
               Height="200" Width="200" Margin="744,432,556,363">

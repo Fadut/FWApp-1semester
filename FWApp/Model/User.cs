@@ -17,7 +17,10 @@ namespace FWApp.Model
         private string _password;
 
         #endregion
-
+        public User(string name)
+        {
+            _name = name;
+        }
         #region Properties
 
         public string Name
@@ -52,6 +55,10 @@ namespace FWApp.Model
 
         #endregion
 
+        public override string ToString()
+        {
+            return $"Hej, {Name}";
+        }
         
     }
 }

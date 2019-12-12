@@ -13,6 +13,7 @@ namespace FWApp.Model
         private string _muscleGroup;
         private string _description;
 
+        public Equipment() { }
         public Equipment(int iD, string name, string muscleGroup, string description)
         {
             _iD = iD;

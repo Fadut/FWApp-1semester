@@ -31,5 +31,10 @@ namespace FWApp
         {
             throw new NotImplementedException();
         }
+
+        private void ScrollViewer_ViewChanged(object sender, ScrollViewerViewChangedEventArgs e)
+        {
+
+        }
     }
 }

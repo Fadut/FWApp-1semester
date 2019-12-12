@@ -33,7 +33,7 @@ namespace FWApp
             throw new NotImplementedException();
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+     /*   private async void Button_Click(object sender, RoutedEventArgs e)
         {
 
             if ((Email.Text == "Admin") && (Password.Text == "admin"))
@@ -50,7 +50,7 @@ namespace FWApp
             }
 
         }
-
+        */
         private void Email_TextChanged(object sender, TextChangedEventArgs e)
         {
 
@@ -64,6 +64,11 @@ namespace FWApp
         private  void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(CreateUserPage), null);
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

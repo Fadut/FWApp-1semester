@@ -8,7 +8,7 @@ namespace FWApp.Model
 {
     class Catalog
     {
-        private List<Equipment> _maskiner;
+        public List<Equipment> _maskiner;
 
         public Catalog()
         {

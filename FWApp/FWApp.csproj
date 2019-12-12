@@ -120,10 +120,10 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Common\SharedKnowledgeSingleton.cs" />
     <Compile Include="Model\Catalog.cs" />
     <Compile Include="Model\Post.cs" />
     <Compile Include="ViewModel\BaseVM.cs" />
-    <Compile Include="ViewModel\EquipmentGuideVM.cs" />
     <Compile Include="ViewModel\FitnessGuideVM.cs" />
     <Compile Include="Model\FitnessCentre.cs" />
     <Compile Include="ViewModel\ForsideVM.cs" />

@@ -64,7 +64,7 @@ namespace FWApp.ViewModel
             catalog = new Catalog();
             _equipments = new ObservableCollection<Equipment>(catalog.Equipment);
 
-            _selectedEquipment = new Equipment(0, "Navn", "Muskelgruppe", "Forklaring");
+            _selectedEquipment = new Equipment(0, "Navn", "Muskelgruppe", "Forklaring", "Videoen");
             
             SøgningCommand = new RelayCommand(SøgEquipment);
             _shared = SharedKnowledgeSingleton.Instance;

@@ -11,7 +11,7 @@ namespace FWApp.ViewModel
 {
     public class FitnessGuideVM : BaseVM
     {
-        private ObservableCollection<Equipment> equipments;
+        private ObservableCollection<Equipment> _equipments;
         private Equipment _selectedEquipment;
         private int _selectedID;
         private RelayCommand _søgningCommand;
@@ -20,10 +20,10 @@ namespace FWApp.ViewModel
 
         public ObservableCollection<Equipment> Equipments
         {
-            get { return equipments; }
+            get { return _equipments; }
             set
             {
-                equipments = value;
+                _equipments = value;
                 OnPropertyChanged();
             }
         }
@@ -61,7 +61,8 @@ namespace FWApp.ViewModel
 
         public FitnessGuideVM()
         {
-            equipments = new ObservableCollection<Equipment>();
+            catalog = new Catalog();
+            _equipments = new ObservableCollection<Equipment>(catalog.Equipment);
 
             _selectedEquipment = new Equipment(0, "Navn", "Muskelgruppe", "Forklaring");
             

@@ -37,5 +37,11 @@ namespace FWApp.Model
             _maskiner.Add(new Equipment(21, "Push Ups", "Arm", "Du skal..."));
         }
 
+        public List<Equipment> Equipment
+        {
+            get { return _maskiner; }
+            set { _maskiner = value; }
+        }
+
     }
 }

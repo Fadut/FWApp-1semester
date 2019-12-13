@@ -12,27 +12,43 @@
     <Page.DataContext>
         <local1:FitnessGuideVM></local1:FitnessGuideVM>
     </Page.DataContext>
-    
+
     <Grid Background="#6E6E6E">
         <Grid BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Background="#FF4D4D4D" Height="72">
             <TextBlock Text="Vælg Maskine" FontWeight="Bold" FontSize="30" TextAlignment="Center" FontFamily="Comic Sans MS" Foreground="#FF33FF33" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" Width="300" Margin="66, 15, 66, 0"/>
-            <Button Content="🡐" FocusVisualPrimaryBrush="#00121212" Foreground="#FFD4D4D4" Background="#00000000" FontFamily="Comic Sans MS" FontSize="50" Height="76" Width="66" VerticalAlignment="Top" Margin="0, 4, 0, 0"/>
+            <Button Content="🡐" FocusVisualPrimaryBrush="#00121212" Foreground="#FFD4D4D4" Background="#00000000" FontFamily="Comic Sans MS" FontSize="50" Height="69" Width="66" Margin="1,0,0,0"/>
             <Button Content="☰" FontSize="35" Background="#00000000" Margin="369, 0, 0, 0" VerticalAlignment="Top" HorizontalAlignment="Right" Height="72" Width="63" Foreground="#FFD4D4D4"/>
         </Grid>
         <Grid Margin="0,70,0,5" Background="Gray">
             <StackPanel Orientation="Vertical" BorderBrush="Black" BorderThickness="1.2" HorizontalAlignment="Center" Background="LightGray" Margin="0,30,0,630" Width="386">
-                <TextBox Text="{Binding SelectedEquipment.MuscleGroup}" TextAlignment="Left" TextWrapping="Wrap" FontSize="15" FontFamily="Comic Sans MS"/>
+                <ComboBox PlaceholderText="Muskelgruppe" ItemsSource="{Binding Equipments}" SelectedItem="{Binding SelectedEquipment}" FontSize="15" FontFamily="Comic Sans MS" Width="388">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding MuscleGroup}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
             </StackPanel>
             <StackPanel Orientation="Vertical" BorderBrush="Black" BorderThickness="1.2" HorizontalAlignment="Center" Background="LightGray" Margin="0,90,0,570" Width="386">
-                <TextBox Text="{Binding SelectedEquipment.Name}" FontSize="15" TextAlignment="Left" TextWrapping="Wrap" FontFamily="Comic Sans MS"/>
+                <ComboBox PlaceholderText="Navn" ItemsSource="{Binding Equipments}" SelectedItem="{Binding SelectedEquipment}" FontSize="15" FontFamily="Comic Sans MS" Width="386">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Name}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
             </StackPanel>
             <StackPanel Orientation="Vertical" BorderBrush="Black" BorderThickness="1.2" HorizontalAlignment="Center" Background="LightGray" Margin="0,170,0,20" Width="386">
-                <TextBlock Text="{Binding Path=Shared.Found.Name}" FontSize="30" TextAlignment="Center" HorizontalAlignment="Center" Height="108" FontFamily="Comic Sans MS" Width="367"/>
-                <StackPanel Background="White" Margin="0,10,0,0" Height="226">
-                    <Image Source="/Assets/VideoStart.png" Height="226"/>
+                <TextBlock Text="{Binding Path=Shared.Found.Name}" FontSize="30" TextAlignment="Center" HorizontalAlignment="Center" Height="70" FontFamily="Comic Sans MS" Width="367"/>
+                <StackPanel>
+                    <MediaElement Source="{Binding Path=Shared.Found.Video}" Height="225"/>
                 </StackPanel>
                 <StackPanel>
-                    <TextBlock Text="{Binding Shared.Found.Description}" FontSize="15" FontFamily="Comic Sans MS"/>
+                    <TextBlock Text="{Binding Path=Shared.Found.Description}" FontSize="15" FontFamily="Comic Sans MS"/>
                 </StackPanel>
             </StackPanel>
 

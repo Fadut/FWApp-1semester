@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace FWApp.Model
 {
-    class Post
+    public class Advertisement
     {
         private string _postHeadline;
         private string _postText;
         private string _postDate;
         private string _postLink;
 
-        public Post(string postHeadline, string postText, string postDate, string postLink)
+        public Advertisement(string postHeadline, string postText, string postDate, string postLink)
         {
             _postHeadline = postHeadline;
             _postText = postText;

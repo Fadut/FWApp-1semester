@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FWApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FWApp.Model
 {
-    class Catalog
+    class Catalog : BaseVM
     {
         public List<Equipment> _maskiner;
 
@@ -14,7 +15,7 @@ namespace FWApp.Model
         {
             _maskiner = new List<Equipment>();
 
-            _maskiner.Add(new Equipment(1, "Chest Press", "Bryst", "Du skal...", "https://www.youtube.com/watch?v=xUm0BiZCWlQ"));
+            _maskiner.Add(new Equipment(1, "Chest Press", "Bryst", "Du skal hbhftfjtrchyucytvibb bds sgyddr Martin Marc huuyyyu", "https://www.youtube.com/watch?v=xUm0BiZCWlQ"));
             _maskiner.Add(new Equipment(2, "Leg Press", "Ben", "Her er det vigtigt, at...", "https://www.youtube.com/watch?v=IZxyjW7MPJQ"));
             _maskiner.Add(new Equipment(3, "Fly/Rear Delt", "Arm", "Her er det vigtigt, at...", "https://www.youtube.com/watch?v=6yMdhi2DVao"));
             _maskiner.Add(new Equipment(4, "Abdominal", "Mave", "Husk at på denne, skal du...", "https://www.youtube.com/watch?v=_O1xunCfYEM"));
@@ -38,7 +39,12 @@ namespace FWApp.Model
         public List<Equipment> Equipment
         {
             get { return _maskiner; }
-            set { _maskiner = value; }
+            set 
+            { 
+                _maskiner = value;
+                OnPropertyChanged();
+            
+            }
         }
 
     }

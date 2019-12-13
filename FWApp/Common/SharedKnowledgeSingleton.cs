@@ -18,7 +18,7 @@ namespace FWApp.Common
         private SharedKnowledgeSingleton()
         {
             _found = new Equipment();
-            User user = new User("Marc", 4444444, "Hovedgaden 23a", "marc@gmail.com", "abcd");
+            User user = new User("Bruger", 4444444, "Hovedgaden 23a", "bruger@gmail.com", "abcd");
             _users = new ObservableCollection<User>();
             _users.Add(user);
         }

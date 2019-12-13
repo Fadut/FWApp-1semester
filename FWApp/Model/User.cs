@@ -17,9 +17,22 @@ namespace FWApp.Model
         private string _password;
 
         #endregion
-        public User(string name)
+        public User(string name, int phoneNumber, string address, string email, string password)
         {
             _name = name;
+            _phoneNumber = phoneNumber;
+            _address = address;
+            _email = email;
+            _password = password;
+        }
+
+        public User()
+        {
+            _name = "";
+            _phoneNumber = 0;
+            _address = "";
+            _email = "";
+            _password = "";
         }
         #region Properties
 
@@ -54,11 +67,6 @@ namespace FWApp.Model
         }
 
         #endregion
-
-        public override string ToString()
-        {
-            return $"Hej, {Name}";
-        }
         
     }
 }

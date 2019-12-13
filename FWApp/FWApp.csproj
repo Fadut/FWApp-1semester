@@ -122,14 +122,12 @@
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SharedKnowledgeSingleton.cs" />
     <Compile Include="Model\Catalog.cs" />
-    <Compile Include="Model\News.cs" />
     <Compile Include="Model\Advertisement.cs" />
-    <Compile Include="Model\Commercial.cs" />
-    <Compile Include="Model\Tilbud.cs" />
     <Compile Include="ViewModel\BaseVM.cs" />
     <Compile Include="ViewModel\FitnessGuideVM.cs" />
     <Compile Include="Model\FitnessCentre.cs" />
     <Compile Include="ViewModel\ForsideVM.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="View\BusynessView.xaml.cs">
       <DependentUpon>BusynessView.xaml</DependentUpon>
     </Compile>
@@ -163,7 +161,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Fitness.jpg" />
-    <Content Include="Assets\options.png" />
     <Content Include="Assets\VideoStart.png" />
     <Content Include="Assets\niveaulogo.png" />
     <Content Include="Assets\linklogo.png" />

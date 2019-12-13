@@ -36,101 +36,125 @@
     
 
     <Grid>
+        <ScrollViewer>
+            <Grid>
 
-        <!--<Grid.RowDefinitions>
-            <RowDefinition Height="0.1"></RowDefinition>
-            <RowDefinition Height="0.3"></RowDefinition>
-        </Grid.RowDefinitions>-->
+                <!--Row definitions which will help with the layout of the page. Use these so grids automatically align themselves-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="0.55*"/>
+                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="0.9*" />
+                </Grid.RowDefinitions>
 
 
+                <!--THIS IS THE HEADER-->
+                <Grid Grid.Row="0"  Background="#6E6E6E" BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Padding="0, 10, 0, 15">
+                    <TextBlock Text="Hej Bruger" FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Verdana" Foreground="#FF33FF33" VerticalAlignment="Top"/>
 
-        <Grid Background="#6E6E6E">
-            <Grid BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Background="#FF4D4D4D" Height="72">
-                <TextBlock Text="Hej, Bruger" FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Verdana" Foreground="#FF33FF33" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" Width="300" Margin="66,15,66,0"/>
-                <Button Content="🡐" FocusVisualPrimaryBrush="#00121212" Foreground="#FFD4D4D4" Background="#00000000" FontFamily="Comic Sans MS" FontSize="50" Height="76" Width="66" VerticalAlignment="Top" Margin="0,-4,0,0"/>
-                <!--<Button Content="☰" FontSize="35" Background="#00000000" Margin="369,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Right"  Height="72" Width="63" Foreground="#FFD4D4D4"/>-->
-               
-                <Button Background="#00000000" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="#FFD4D4D4">
-                    <Viewbox Height="72" Width="48">
-                        <SymbolIcon Symbol="GlobalNavigationButton" Foreground="#FFD4D4D4"/>
-                    </Viewbox>
-                </Button>
+                    <!--GO BACK BUTTON-->
+                    <Button Background="#00000000" VerticalAlignment="Center" HorizontalAlignment="Left" Height="45" Width="45">
+                        <Viewbox >
+                            <SymbolIcon Symbol="Back" Foreground="#FFD4D4D4"/>
+                        </Viewbox>
+                    </Button>
 
-            </Grid>
+                    <!--MENU BUTTON-->
+                    <Button Background="#00000000" VerticalAlignment="Center" HorizontalAlignment="Right" Height="45" Width="45" >
+                        <Viewbox>
+                            <SymbolIcon Symbol="GlobalNavigationButton" Foreground="#FFD4D4D4"/>
+                        </Viewbox>
+                    </Button>
+                </Grid>
 
-        <ScrollViewer ViewChanged="ScrollViewer_ViewChanged" Margin="0,72,0,0">
 
-            <Grid Margin="0,0,0,384" Background="#E8E8E8" Height="800">
+                <!--GRID WITH NEWS AND POSTS-->
+                <Grid Grid.Row="1" Background="#E8E8E8" BorderThickness="1.2" BorderBrush="Black">
+                    <TextBlock Text="NEWS OG TILBUD" FontSize="26" TextAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontFamily="Verdana"/>
 
-                    <Grid VerticalAlignment="Top" Height="200" Margin="0, 0, 0, 0" BorderBrush="Black" BorderThickness="1.2">
-                        <Image Source="../Assets/niveaulogo.png" Margin="2,2,1,0"/>
-                        <TextBlock Text="NEWS OG TILBUD" FontSize="26" TextAlignment="Center" VerticalAlignment="Center" Margin="0, 0, 0, 0" Style="{StaticResource TextBlockStyle}"/>
-                        <Button Content="🡐" Foreground="#FF33FF33" Background="#E8E8E8 " FontFamily="Comic Sans MS" FontSize="30" HorizontalAlignment="Left" Margin="0, 0, 0, 0"/>
-                        <Button Content="→" Foreground="#FF33FF33" Background="#E8E8E8" FontFamily="Comic Sans MS" FontSize="30" HorizontalAlignment="Right" Margin="0, 0, 0, 0"/>
+                    <!--INSERT IMAGE HERE -->
+
+                    <Button Foreground="Black" Background="#E8E8E8" HorizontalAlignment="Left" Height="45" Width="45">
+                        <Viewbox>
+                            <SymbolIcon Symbol="Back"/>
+                        </Viewbox>
+                    </Button>
+
+                    <Button Foreground="Black" Background="#E8E8E8" HorizontalAlignment="Right" Height="45" Width="45">
+                        <Viewbox>
+                            <SymbolIcon Symbol="Forward"/>
+                        </Viewbox>
+                    </Button>
+                </Grid>
+
+
+                <!--GRID WITH FITNESS LEVEL-->
+                <Grid Grid.Row="2" Background="#E8E8E8" Padding="20, 25, 0, 0">
+                    <TextBlock Text="Fitness Niveau" FontSize="22" TextAlignment="Left" VerticalAlignment="Top" Style="{StaticResource TextBlockStyle}" />
+
+                    <!--INSERT IMAGE -->
+                </Grid>
+
+
+                <!--GRID WITH MENU FOR ALL OPTIONS-->
+                <Grid Grid.Row="3" Background="#E8E8E8" BorderThickness="1.2" BorderBrush="Black" Padding="60, 10, 60, 10" >
+
+
+                    <!-- LEFT ROW OF OPTION MENU -->
+                    <Grid Style="{StaticResource IconBox}" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <TextBlock Text="Fitness Guide" FontSize="12" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
+                        <Viewbox Style="{StaticResource ViewBox}" Margin="0, 0, 0, 10">
+                            <SymbolIcon Symbol="Flag" Foreground="Black"/>
+                        </Viewbox>
                     </Grid>
 
 
-                    <Grid Margin="0,198,0,400" BorderThickness="1.2" BorderBrush="Black">
-                        <TextBlock Text="Fitness Niveau" FontSize="22" TextAlignment="Left" VerticalAlignment="Top" Style="{StaticResource TextBlockStyle}" Margin="20,20,29,0"/>
-                        <Image Source="../Assets/niveaulogo.png" Margin="240,38,38,17"/>
+                    <Grid Style="{StaticResource IconBox}" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <TextBlock Text="Belønninger" FontSize="12" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
+                        <Viewbox Style="{StaticResource ViewBox}" Margin="0, 0, 0, 10">
+                            <SymbolIcon Symbol="Tag" Foreground="Black"/>
+                        </Viewbox>
                     </Grid>
 
 
-                    <Grid VerticalAlignment="Bottom" Height="380" Margin="0,0,0,21" BorderBrush="Black" Padding="55, 20, 55, 40">
+                    <Grid Style="{StaticResource IconBox}" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                        <TextBlock Text="Indstillinger" FontSize="12" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
+                        <Viewbox Style="{StaticResource ViewBox}" Margin="0, 0, 0, 10">
+                            <SymbolIcon Symbol="Setting" Foreground="Black"/>
+                        </Viewbox>
+                    </Grid>
 
 
-                        <Grid Style="{StaticResource IconBox}" HorizontalAlignment="Left" VerticalAlignment="Top">
-                            <TextBlock Text="Fitness Guide" FontSize="12" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
-                            <Viewbox Style="{StaticResource ViewBox}" Margin="0, 0, 0, 10">
-                                <SymbolIcon Symbol="Flag" Foreground="Black"/>
-                            </Viewbox>
-                        </Grid>
+                    <!-- RIGHT ROW OF OPTION MENU -->
+                    <Grid Style="{StaticResource IconBox}" HorizontalAlignment="Right" VerticalAlignment="Top">
+                        <TextBlock Text="Min Profil" FontSize="12" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
+                        <Viewbox Style="{StaticResource ViewBox}" Margin="0, 0, 0, 10">
+                            <SymbolIcon Symbol="Contact2" Foreground="Black"/>
+                        </Viewbox>
+                    </Grid>
 
 
-                        <Grid Style="{StaticResource IconBox}" HorizontalAlignment="Left" VerticalAlignment="Center" >
-                            <TextBlock Text="Belønninger" FontSize="12" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
-                            <Viewbox Style="{StaticResource ViewBox}" Margin="0, 0, 0, 10">
-                                <SymbolIcon Symbol="Tag" Foreground="Black" />
-                            </Viewbox>
-                        </Grid>
+                    <Grid Style="{StaticResource IconBox}" HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <TextBlock Text="Travlhed" FontSize="12" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
+                        <Viewbox Style="{StaticResource ViewBox}" Margin="0, 0, 0, 10">
+                            <SymbolIcon Symbol="People" Foreground="Black"/>
+                        </Viewbox>
+                    </Grid>
 
 
-                        <Grid Style="{StaticResource IconBox}" HorizontalAlignment="Left" VerticalAlignment="Bottom" >
-                            <TextBlock Text="Indstillinger" FontSize="12" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
-                            <Viewbox Style="{StaticResource ViewBox}" Margin="0, 0, 0, 10">
-                                <SymbolIcon Symbol="Setting" Foreground="Black" />
-                            </Viewbox>
-                        </Grid>
-
-
-                        <Grid Style="{StaticResource IconBox}" HorizontalAlignment="Right" VerticalAlignment="Top" >
-                            <TextBlock Text="Min Profil" FontSize="12" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
-                            <Viewbox Style="{StaticResource ViewBox}" Margin="0, 0, 0, 10">
-                                <SymbolIcon Symbol="Contact2" Foreground="Black" />
-                            </Viewbox>
-                        </Grid>
-
-
-                        <Grid Style="{StaticResource IconBox}" HorizontalAlignment="Right" VerticalAlignment="Center" >
-                            <TextBlock Text="Travlhed" FontSize="12" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
-                            <Viewbox Style="{StaticResource ViewBox}" Margin="0, 0, 0, 10">
-                                <SymbolIcon Symbol="People" Foreground="Black"/>
-                            </Viewbox>
-                        </Grid>
-
-
-                        <Grid Style="{StaticResource IconBox}" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
-                            <TextBlock Text="Kontakt/Hjælp" FontSize="12" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
-                            <Viewbox Style="{StaticResource ViewBox}" Margin="0, 0, 0, 10">
-                                <SymbolIcon Symbol="Mail" Foreground="Black" />
-                            </Viewbox>
-                        </Grid>
-
-                   
-
+                    <Grid Style="{StaticResource IconBox}" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                        <TextBlock Text="Kontakt/Hjælp" FontSize="12" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
+                        <Viewbox Style="{StaticResource ViewBox}" Margin="0, 0, 0, 10">
+                            <SymbolIcon Symbol="Mail" Foreground="Black"/>
+                        </Viewbox>
                     </Grid>
                 </Grid>
-            </ScrollViewer>
-        </Grid>
+
+
+
+
+
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </Page>

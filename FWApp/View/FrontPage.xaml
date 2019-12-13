@@ -58,6 +58,8 @@
                 <Grid Margin="0,198,0,400" BorderThickness="1.2" BorderBrush="Black">
                     <TextBlock Text="Fitness Niveau" FontSize="22" TextAlignment="Left" VerticalAlignment="Top" Style="{StaticResource TextBlockStyle}" Margin="20,20,29,0"/>
                     <Image Source="../Assets/niveaulogo.png" Margin="240,38,38,17"/>
+                    <Grid Width="100"></Grid>
+                    <TextBlock HorizontalAlignment="Left" Margin="208,127,0,0" Text="3" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
                 </Grid>
 

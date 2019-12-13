@@ -2,6 +2,7 @@
 using FWApp.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +13,14 @@ namespace FWApp.Common
     {
         private static SharedKnowledgeSingleton _instance = new SharedKnowledgeSingleton();
 
+        private ObservableCollection<User> _users;
+
         private SharedKnowledgeSingleton()
         {
             _found = new Equipment();
+            User user = new User("Marc", 4444444, "Hovedgaden 23a", "marc@gmail.com", "abcd");
+            _users = new ObservableCollection<User>();
+            _users.Add(user);
         }
 
         public static SharedKnowledgeSingleton Instance
@@ -39,6 +45,17 @@ namespace FWApp.Common
                 OnPropertyChanged(nameof(Found));
             }
         }
+
+        public ObservableCollection<User> Users
+        {
+            get { return _users; }
+            set
+            {
+                _users = value;
+                OnPropertyChanged();
+            }
+        }
+
     }
     
 }

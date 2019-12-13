@@ -127,6 +127,7 @@
     <Compile Include="ViewModel\FitnessGuideVM.cs" />
     <Compile Include="Model\FitnessCentre.cs" />
     <Compile Include="ViewModel\ForsideVM.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="View\BusynessView.xaml.cs">
       <DependentUpon>BusynessView.xaml</DependentUpon>
     </Compile>

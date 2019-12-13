@@ -15,7 +15,7 @@ namespace FWApp.ViewModel
         #region Instance Fields
 
         private RelayCommand _skiftSideCommand;
-        private ObservableCollection<User> users;
+       
         private User _selectedUser;
 
 
@@ -23,15 +23,7 @@ namespace FWApp.ViewModel
 
         #region Properties
 
-        public ObservableCollection<User> Users
-        {
-            get { return users; }
-            set
-            {
-                users = value;
-                OnPropertyChanged();
-            }
-        }
+        
 
         public User SelectedUser
         {
@@ -59,10 +51,9 @@ namespace FWApp.ViewModel
             SkiftSideCommand = new RelayCommand(TilTravlhed);
             SkiftSideCommand = new RelayCommand(TilForside);
 
-            users = new ObservableCollection<User>();
 
 
-           _selectedUser = new User("Marc");
+           
 
         }
 

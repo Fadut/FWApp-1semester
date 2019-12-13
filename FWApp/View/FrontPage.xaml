@@ -2,12 +2,16 @@
     x:Class="FWApp.FrontPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:FWApp"
+    xmlns:local="using:FWApp.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModel="using:FWApp.ViewModel"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.DataContext>
+        <viewModel:ForsideVM/>
+    </Page.DataContext>
 
     <Page.Resources>
         <Style x:Key="TextBlockStyle" TargetType="TextBlock">
@@ -54,9 +58,9 @@
 
             </Grid>
 
-            <ScrollViewer>
+        <ScrollViewer ViewChanged="ScrollViewer_ViewChanged" Margin="0,72,0,0">
 
-                <Grid Margin="0,70,0,384" Background="#E8E8E8" Height="800">
+            <Grid Margin="0,0,0,384" Background="#E8E8E8" Height="800">
 
                     <Grid VerticalAlignment="Top" Height="200" Margin="0, 0, 0, 0" BorderBrush="Black" BorderThickness="1.2">
                         <Image Source="../Assets/niveaulogo.png" Margin="2,2,1,0"/>

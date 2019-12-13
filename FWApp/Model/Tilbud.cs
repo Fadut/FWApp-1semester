@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FWApp.ViewModel
+namespace FWApp.Model
 {
-    class EquipmentGuideVM : FitnessGuideVM
+    public class Tilbud : Advertisement
     {
-
     }
 }

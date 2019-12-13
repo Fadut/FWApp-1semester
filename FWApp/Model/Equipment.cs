@@ -12,13 +12,16 @@ namespace FWApp.Model
         private string _name;
         private string _muscleGroup;
         private string _description;
+        private string _video;
 
-        public Equipment(int iD, string name, string muscleGroup, string description)
+        public Equipment() { }
+        public Equipment(int iD, string name, string muscleGroup, string description, string video)
         {
             _iD = iD;
             _name = name;
             _muscleGroup = muscleGroup;
             _description = description;
+            _video = video;
         }
 
         public int ID
@@ -45,9 +48,15 @@ namespace FWApp.Model
             set { _description = value; }
         }
 
+        public string Video
+        {
+            get { return _video; }
+            set { _video = value; }
+        }
+
         public override string ToString()
         {
-            return $"{nameof(ID)}: {ID}, {nameof(Name)}: {Name}, {nameof(MuscleGroup)}: {MuscleGroup}, {nameof(Description)}: {Description}";
+            return $"{nameof(ID)}: {ID}, {nameof(Name)}: {Name}, {nameof(MuscleGroup)}: {MuscleGroup}, {nameof(Description)}: {Description}, {nameof(Video)}: {Video}";
         }
     }
 }

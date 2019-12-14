@@ -14,7 +14,11 @@ namespace FWApp.ViewModel
         private ObservableCollection<Equipment> _equipments;
         private Equipment _selectedEquipment;
         private int _selectedID;
-        private RelayCommand _søgningCommand;
+        private string _selectedMuscleGroup;
+        private string _selectedName;
+        private RelayCommand _søgningCommandID;
+        private RelayCommand _søgningCommandMG;
+        private RelayCommand _søgningCommandN;
         private Catalog catalog = new Catalog();
         public SharedKnowledgeSingleton _shared;
 
@@ -48,10 +52,42 @@ namespace FWApp.ViewModel
             }
         }
 
-        public RelayCommand SøgningCommand
+        public string SelectedMuscleGroup
         {
-            get { return _søgningCommand; }
-            set { _søgningCommand = value; }
+            get { return _selectedMuscleGroup; }
+            set
+            {
+                _selectedMuscleGroup = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string SelectedName
+        {
+            get { return _selectedName; }
+            set
+            {
+                _selectedName = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public RelayCommand SøgningCommandID
+        {
+            get { return _søgningCommandID; }
+            set { _søgningCommandID = value; }
+        }
+
+        public RelayCommand SøgningCommandMG
+        {
+            get { return _søgningCommandMG; }
+            set { _søgningCommandMG = value; }
+        }
+
+        public RelayCommand SøgningCommandN
+        {
+            get { return _søgningCommandN; }
+            set { _søgningCommandN = value; }
         }
 
         public SharedKnowledgeSingleton Shared
@@ -66,13 +102,15 @@ namespace FWApp.ViewModel
 
             _selectedEquipment = new Equipment(0, "Navn", "Muskelgruppe", "Forklaring", "Videoen");
             
-            SøgningCommand = new RelayCommand(SøgEquipment);
+            SøgningCommandID = new RelayCommand(SøgEquipmentID);
+            SøgningCommandMG = new RelayCommand(SøgEquipmentMG);
+            SøgningCommandN = new RelayCommand(SøgEquipmentN);
             _shared = SharedKnowledgeSingleton.Instance;
         }
 
 
 
-        public void SøgEquipment()
+        public void SøgEquipmentID()
         {
            foreach(var m in catalog._maskiner)
             {
@@ -80,11 +118,29 @@ namespace FWApp.ViewModel
                 {
                     _shared.Found = m;
                 }
-            }
-            
-            
+            } 
         }
 
+        public void SøgEquipmentMG()
+        {
+            foreach (var m in catalog._maskiner)
+            {
+                if (m.MuscleGroup == SelectedMuscleGroup)
+                {
+                    _shared.Found = m;
+                }
+            }
+        }
 
+        public void SøgEquipmentN()
+        {
+            foreach (var m in catalog._maskiner)
+            {
+                if (m.Name == SelectedName)
+                {
+                    _shared.Found = m;
+                }
+            }
+        }
     }
 }

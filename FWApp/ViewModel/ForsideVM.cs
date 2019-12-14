@@ -9,14 +9,40 @@ using FWApp.Model;
 
 namespace FWApp.ViewModel
 {
-    class ForsideVM : BaseVM
+    public class ForsideVM : BaseVM
     {
+
 
         #region Instance Fields
 
         private User _selectedUser;
 
+        private ObservableCollection<Advertisement> _advertisements;
+        private Catalog _adCatalog = new Catalog();
+
         #endregion
+
+
+        #region Constructor
+
+        public ForsideVM()
+        {
+            _adCatalog = new Catalog();
+            _advertisements = new ObservableCollection<Advertisement>(_adCatalog.Advertisements);
+        }
+
+        #endregion
+
+        public ObservableCollection<Advertisement> Advertisements
+        {
+            get { return _advertisements; }
+            set
+            {
+                _advertisements = value;
+                OnPropertyChanged();
+            }
+        }
+
 
         #region Properties
 

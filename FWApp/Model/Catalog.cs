@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace FWApp.Model
 {
-    class Catalog
+    public class Catalog
     {
         public List<Equipment> _maskiner;
+
+        private List<Advertisement> _advertisements;
 
         public Catalog()
         {
@@ -33,12 +35,30 @@ namespace FWApp.Model
             _maskiner.Add(new Equipment(17, "Adjustable Cable Crossover", "Arm", "Du skal...", "https://www.youtube.com/watch?v=taI4XduLpTk"));
             _maskiner.Add(new Equipment(18, "Dual Pulley Row", "Ryg", "Her er det vigtigt, at...", "https://www.youtube.com/watch?v=tKSCgKI7ZXQ"));
             _maskiner.Add(new Equipment(19, "Adjustable Pulley", "Arm", "Husk at på denne, skal du...", "https://www.youtube.com/watch?v=_g9iYq67Nto"));
+
+
+
+            _advertisements = new List<Advertisement>();
+
+            _advertisements.Add(new Advertisement("TILBUD", "HER ER TILBUD", "I morgen", "INSERT LINK HERE"));
+            _advertisements.Add(new Advertisement("TILBUD2", "NÆSTE TILBUD", "Den 24.", "INSERT LINK HERE"));
+            _advertisements.Add(new Advertisement("TILBUD3", "TREDJE TILBUD", "Om 4 dage", "INSERT LINK HERE"));
+
+
+
         }
 
         public List<Equipment> Equipment
         {
             get { return _maskiner; }
             set { _maskiner = value; }
+        }
+
+
+        public List<Advertisement> Advertisements
+        {
+            get { return _advertisements; }
+            set { _advertisements = value; }
         }
 
     }

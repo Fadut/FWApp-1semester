@@ -27,8 +27,8 @@ namespace FWApp.ViewModel
 
         public ForsideVM()
         {
-            _adCatalog = new Catalog();
-            _advertisements = new ObservableCollection<Advertisement>(_adCatalog.Advertisements);
+            //_adCatalog = new Catalog();
+            //_advertisements = new ObservableCollection<Advertisement>(_adCatalog.Advertisements);
         }
 
         #endregion

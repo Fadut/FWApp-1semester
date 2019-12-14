@@ -27,12 +27,24 @@
                 <Grid Height="445" VerticalAlignment="Top" Margin="14,37,7,0">
                     <TextBlock FontFamily="Comic Sans MC" FontSize="20" FontWeight="Bold" Text="Belønningssystem" Margin="0,0,140,414"></TextBlock>
                     <TextBlock TextWrapping ="WrapWholeWords" Margin="21,42,28,76" SelectionChanged="TextBlock_SelectionChanged_1" LineHeight="23"><Run Text="Fitness Worlds belønningssystem er med til at give en interaktiv og sjov oplevelse til dig som medlem. "/><LineBreak/><Run/><LineBreak/><Run Text="Hvert eneste gang du besøger en af Fitness Worlds "/><Run Text="mange centre"/><Run Text=" registrerer vores system hvor lang tid du har trænet"/><Run Text=", "/><Run Text="og for hver time du har knoklet, modtager d"/><Run Text="u"/><Run Text=" en hvis mængde "/><Run Text="'Fitness XP' der vil ultimativ få dig til at stige i 'Fitness Niveau'. Hvert eneste gang du stiger i niveau, modtager du en præmie i form af point (som kan bruges til at købe produkter i receptionen), stablebare rabatter og andet spændende fitness goder."/><LineBreak/><Run/><LineBreak/><Run Text="Du kan t"/><Run Text="ryk"/><Run Text="ke"/><Run Text=" på knappen nedenunder for gå til belønning"/><Run Text="er."/></TextBlock>
-                    <Button BorderBrush="Black" HorizontalAlignment="Center" BorderThickness="1.2" FontWeight="Bold" FontFamily="Comic Sans MS" Content="Belønninger" Margin="0,388,0,0" Width="223" Height="47" VerticalAlignment="Top" RenderTransformOrigin="0.506,1.032"></Button>
+                    <Button BorderBrush="Black" HorizontalAlignment="Center" BorderThickness="1.2" FontWeight="Bold" FontFamily="Comic Sans MS" Content="Belønninger" Margin="0,388,0,0" Width="223" Height="47" VerticalAlignment="Top" RenderTransformOrigin="0.506,1.032">
+                        <Custom:Interaction.Behaviors>
+                            <Custom1:EventTriggerBehavior EventName="Click">
+                                <Custom1:NavigateToPageAction TargetPage="FWApp.RewardSystemPage"/>
+                            </Custom1:EventTriggerBehavior>
+                        </Custom:Interaction.Behaviors>
+                    </Button>
                 </Grid>
                 <Grid BorderBrush="Black" BorderThickness="1.2" Height="522" VerticalAlignment="Top" Margin="-2,487,-20,0">
                     <TextBlock FontFamily="Comic Sans MC" FontSize="20" FontWeight="Bold" Text="Travlhed" Margin="23,44,150,273"></TextBlock>
                     <TextBlock TextWrapping ="WrapWholeWords" Margin="42,92,60,52" SelectionChanged="TextBlock_SelectionChanged_2" LineHeight="25"><Run Text="I Fitness Worlds app kan du se hvor mange besøgende der er i et af vores træningscentre. "/><LineBreak/><Run/><LineBreak/><Run Text="Du kan se hvor mange der nuværende træner (liveopdatering) i et bestemt center og livemåleren bliver gradvist udfyldt alt efter hvor travlt der er."/><LineBreak/><Run/><LineBreak/><Run Text="Der er også et skema der viser hvordan det pågældende træningscenter du vælger at tage udgangspunkt i typisk ser ud i bestemte tider."/><LineBreak/><Run/><LineBreak/><Run Text="Du kan trykke på knappen nedenunder for at se hvor travlt vi har det i et af vores træningscentre nu."/></TextBlock>
-                    <Button BorderBrush="Black" BorderThickness="1.2" FontWeight="Bold" FontFamily="Comic Sans MS" Content="Travlhed" Margin="0,453,0,0" VerticalAlignment="Top" Width="223" Height="47" HorizontalAlignment="Center"/>
+                    <Button BorderBrush="Black" BorderThickness="1.2" FontWeight="Bold" FontFamily="Comic Sans MS" Content="Travlhed" Margin="0,453,0,0" VerticalAlignment="Top" Width="223" Height="47" HorizontalAlignment="Center">
+                        <Custom:Interaction.Behaviors>
+                            <Custom1:EventTriggerBehavior EventName="Click">
+                                <Custom1:NavigateToPageAction TargetPage="FWApp.View.BusynessView"/>
+                            </Custom1:EventTriggerBehavior>
+                        </Custom:Interaction.Behaviors>
+                    </Button>
                 </Grid>
                 <Grid Height="314" VerticalAlignment="Top" Margin="12,1021,10,0">
                     <TextBlock FontFamily="Comic Sans MC" FontSize="20" FontWeight="Bold" Text="Brug for at kontakte os?" Margin="0,39,176,243"></TextBlock>

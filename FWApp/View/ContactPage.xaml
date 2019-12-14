@@ -7,9 +7,9 @@
     xmlns:Custom="using:Microsoft.Xaml.Interactivity" xmlns:Custom1="using:Microsoft.Xaml.Interactions.Core"
     x:Class="FWApp.ContactPage"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" d:DesignHeight="1894.4">
 
-    <Grid Background="#6E6E6E">
+    <Grid Background="#E3E3E3">
         <Grid BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Background="#FF4D4D4D" Height="72">
             <TextBlock Text="Kontakt &amp; Hjælp" FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Comic Sans MS" Foreground="#FF33FF33" VerticalAlignment="Top" Width="300" Margin="66,15,66,0"/>
             <Button Content="🡐" FocusVisualPrimaryBrush="#00121212" Foreground="#FFD4D4D4" Background="#00000000" FontFamily="Comic Sans MS" FontSize="50" Height="76" Width="66" VerticalAlignment="Top" Margin="0,-4,0,0" Click="Button_Click_1">
@@ -22,8 +22,32 @@
             <Button Content="☰" FontSize="35" Background="#00000000" Margin="369,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Right"  Height="72" Width="63" Foreground="#FFD4D4D4"/>
         </Grid>
 
-        <ScrollViewer Margin="0,72,0,0">
-            <Grid Margin="0,0,0,445" Background="#FF33FF33" BorderThickness="1.2" BorderBrush="Black" Height="921"/>
+        <ScrollViewer Margin="0,72,0,-168">
+            <Grid Margin="0,0,0,445" Background="#E8E8E8" Height="1823">
+                <Grid Height="445" VerticalAlignment="Top" Margin="14,37,7,0">
+                    <TextBlock FontFamily="Comic Sans MC" FontSize="20" FontWeight="Bold" Text="Belønningssystem" Margin="0,0,140,414"></TextBlock>
+                    <TextBlock TextWrapping ="WrapWholeWords" Margin="21,42,28,76" SelectionChanged="TextBlock_SelectionChanged_1" LineHeight="23"><Run Text="Fitness Worlds belønningssystem er med til at give en interaktiv og sjov oplevelse til dig som medlem. "/><LineBreak/><Run/><LineBreak/><Run Text="Hvert eneste gang du besøger en af Fitness Worlds "/><Run Text="mange centre"/><Run Text=" registrerer vores system hvor lang tid du har trænet"/><Run Text=", "/><Run Text="og for hver time du har knoklet, modtager d"/><Run Text="u"/><Run Text=" en hvis mængde "/><Run Text="'Fitness XP' der vil ultimativ få dig til at stige i 'Fitness Niveau'. Hvert eneste gang du stiger i niveau, modtager du en præmie i form af point (som kan bruges til at købe produkter i receptionen), stablebare rabatter og andet spændende fitness goder."/><LineBreak/><Run/><LineBreak/><Run Text="Du kan t"/><Run Text="ryk"/><Run Text="ke"/><Run Text=" på knappen nedenunder for gå til belønning"/><Run Text="er."/></TextBlock>
+                    <Button BorderBrush="Black" HorizontalAlignment="Center" BorderThickness="1.2" FontWeight="Bold" FontFamily="Comic Sans MS" Content="Belønninger" Margin="0,388,0,0" Width="223" Height="47" VerticalAlignment="Top" RenderTransformOrigin="0.506,1.032"></Button>
+                </Grid>
+                <Grid BorderBrush="Black" BorderThickness="1.2" Height="522" VerticalAlignment="Top" Margin="-2,487,-20,0">
+                    <TextBlock FontFamily="Comic Sans MC" FontSize="20" FontWeight="Bold" Text="Travlhed" Margin="23,44,150,273"></TextBlock>
+                    <TextBlock TextWrapping ="WrapWholeWords" Margin="42,92,60,52" SelectionChanged="TextBlock_SelectionChanged_2" LineHeight="25"><Run Text="I Fitness Worlds app kan du se hvor mange besøgende der er i et af vores træningscentre. "/><LineBreak/><Run/><LineBreak/><Run Text="Du kan se hvor mange der nuværende træner (liveopdatering) i et bestemt center og livemåleren bliver gradvist udfyldt alt efter hvor travlt der er."/><LineBreak/><Run/><LineBreak/><Run Text="Der er også et skema der viser hvordan det pågældende træningscenter du vælger at tage udgangspunkt i typisk ser ud i bestemte tider."/><LineBreak/><Run/><LineBreak/><Run Text="Du kan trykke på knappen nedenunder for at se hvor travlt vi har det i et af vores træningscentre nu."/></TextBlock>
+                    <Button BorderBrush="Black" BorderThickness="1.2" FontWeight="Bold" FontFamily="Comic Sans MS" Content="Travlhed" Margin="0,453,0,0" VerticalAlignment="Top" Width="223" Height="47" HorizontalAlignment="Center"/>
+                </Grid>
+                <Grid Height="314" VerticalAlignment="Top" Margin="12,1021,10,0">
+                    <TextBlock FontFamily="Comic Sans MC" FontSize="20" FontWeight="Bold" Text="Brug for at kontakte os?" Margin="0,39,176,243"></TextBlock>
+                    <StackPanel Margin="0,83,3,-248">
+                        <ComboBox HorizontalAlignment="Left" Width="213" RenderTransformOrigin="0.798,0.966" PlaceholderText="Vælg Emne"/>
+                        <TextBox PlaceholderText="Skriv her..." Height="247" Margin="0,10,0,0"></TextBox>
+                        <Button BorderThickness="1.2" FontFamily="Comic Sans MS" BorderBrush="Black" Margin="0,15,0,0" HorizontalAlignment="Center" Content="Send" Width="119" Height="45"/>
+                        <TextBlock Margin="0,15,0,0" TextWrapping="WrapWholeWords" FontSize="11" HorizontalAlignment="Center" TextAlignment="Center" Height="52"><Run Text="Du vil modtage en mail via din Email Addresse inden"/><Run Text=" for"/><Run Text=" 1-3 arbejdsdage - sørg for at undersøge om den er røjet i din spamfolder hvis du ikke har modtaget den inden for den førnævnte periode"/></TextBlock>
+
+
+
+                    </StackPanel>
+                </Grid>
+
+            </Grid>
         </ScrollViewer>
     </Grid>
 </Page>

@@ -56,7 +56,7 @@
 
 
                 <!--THIS IS THE HEADER-->
-                <Grid Grid.Row="0"  Background="#6E6E6E" BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Padding="0, 10, 0, 15" Height="129">
+                <Grid Grid.Row="0"  Background="#6E6E6E" BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Padding="0, 10, 0, 15">
                     <TextBlock Text="Hej Bruger" FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Geneva" Foreground="#FF33FF33" VerticalAlignment="Top"/>
 
                     <!--GO BACK BUTTON-->
@@ -72,18 +72,13 @@
                             <SymbolIcon Symbol="GlobalNavigationButton" Foreground="#FFD4D4D4"/>
                         </Viewbox>
                     </Button>
-                    <Button Content="Log ud" Margin="360,0,0,77" VerticalAlignment="Bottom" Click="Button_Click" Width="65" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="30">
-                        <Button.RenderTransform>
-                            <CompositeTransform Rotation="-2.347" ScaleY="1"/>
-                        </Button.RenderTransform>
-                    </Button>
                 </Grid>
 
 
                 <!--GRID WITH NEWS AND POSTS-->
                 <Grid Grid.Row="1" Background="#E8E8E8" BorderThickness="1.2" BorderBrush="Black">
                     <TextBlock Text="NEWS OG TILBUD" FontSize="26" TextAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontFamily="Geneva"/>
-
+                    
 
                     <!--INSERT IMAGE HERE -->
 

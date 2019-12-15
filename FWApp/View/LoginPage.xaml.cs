@@ -5,7 +5,6 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.Storage;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -67,29 +66,9 @@ namespace FWApp
             this.Frame.Navigate(typeof(CreateUserPage), null);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            
-        }
 
-        private void Page_Loaded(object sender, RoutedEventArgs e)
-        {
-            if (IsUserLoggedIn())
-            {
-                Frame f = (Frame)Window.Current.Content;
-                f.Navigate(typeof(FWApp.FrontPage));
-            }
-        }
-
-        private bool IsUserLoggedIn()
-        {
-            ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            var res = localSettings.Values["IsLoggenIn"];
-            if (res == null)
-            {
-                return false;
-            }
-            return res.ToString() == "true" ? true : false;
         }
     }
 }

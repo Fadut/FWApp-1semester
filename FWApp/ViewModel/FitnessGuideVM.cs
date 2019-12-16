@@ -6,6 +6,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
 namespace FWApp.ViewModel
 {
@@ -150,6 +152,9 @@ namespace FWApp.ViewModel
                 if (m.ID == SelectedID)
                 {
                     _shared.Found = m;
+
+                    Frame f = (Frame)Window.Current.Content;
+                    f.Navigate(typeof(EquipmentGuidePage));
                 }
             } 
         }

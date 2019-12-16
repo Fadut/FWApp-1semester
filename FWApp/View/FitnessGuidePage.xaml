@@ -41,7 +41,6 @@
             <Grid>
                 <TextBox Text="{Binding SelectedID, Mode=TwoWay}" FontFamily="Verdana" FontSize="25" TextAlignment="Left" VerticalAlignment="Top" Margin="63,472,157,0" Height="52"/>
                 <Button Command="{Binding SøgningCommandID}" Content="Søg" FontFamily="Verdana" FontSize="25" VerticalAlignment="Top" Margin="274,473,0,0" Height="51" Width="97" />
-                <Button Content="Go" FontFamily="Verdana" FontSize="25" VerticalAlignment="Top" Margin="274,535,0,0" Height="83" Width="97" Click="Button_Click_1"/>
             </Grid>
 
         </Grid>

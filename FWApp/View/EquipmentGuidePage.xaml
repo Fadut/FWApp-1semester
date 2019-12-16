@@ -28,18 +28,18 @@
         </Grid>
         <Grid Margin="0,70,0,5" Background="Gray">
             <StackPanel Orientation="Vertical" BorderBrush="Black" BorderThickness="1.2" HorizontalAlignment="Center" Background="LightGray" Margin="0,30,0,630" Width="386">
-                <ComboBox PlaceholderText="Muskelgruppe" ItemsSource="{Binding Equipments}" SelectedItem="{Binding SelectedMuscleGroup}" FontSize="15" FontFamily="Verdana" Width="388">
-                    <ComboBox.ItemTemplate>
+                <ComboBox PlaceholderText="Muskelgruppe" ItemsSource="{Binding MuscleSelection}" SelectedItem="{Binding SelectedMuscleGroup, Mode=TwoWay}" FontSize="15" FontFamily="Verdana" Width="388">
+                    <!--<ComboBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
                                 <TextBlock Text="{Binding MuscleGroup}"/>
                             </StackPanel>
                         </DataTemplate>
-                    </ComboBox.ItemTemplate>
+                    </ComboBox.ItemTemplate>-->
                 </ComboBox>
             </StackPanel>
             <StackPanel Orientation="Vertical" BorderBrush="Black" BorderThickness="1.2" HorizontalAlignment="Center" Background="LightGray" Margin="0,90,0,570" Width="386">
-                <ComboBox PlaceholderText="Navn" ItemsSource="{Binding Equipments}" SelectedItem="{Binding SelectedName}"  FontSize="15" FontFamily="Verdana" Width="386">
+                <ComboBox PlaceholderText="Navn" ItemsSource="{Binding Equipments}" SelectedItem="{Binding Shared.Found, Mode=TwoWay}"  FontSize="15" FontFamily="Verdana" Width="386">
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
@@ -52,7 +52,7 @@
             <StackPanel Orientation="Vertical" BorderBrush="Black" BorderThickness="1.2" HorizontalAlignment="Center" Background="LightGray" Margin="0,170,0,20" Width="386">
                 <TextBlock Text="{Binding Shared.Found.Name}" FontSize="30" TextAlignment="Center" HorizontalAlignment="Center" Height="70" FontFamily="Verdana" Width="367"/>
                 <StackPanel>
-                    <MediaElement Source="{Binding Shared.Found.Video}" Height="225"/>
+                    <WebView Source="{Binding Shared.Found.Video}" Height="225"/>
                 </StackPanel>
                 <StackPanel>
                     <TextBlock Text="{Binding Shared.Found.Description}" FontSize="15" FontFamily="Verdana" Height="202" TextWrapping="WrapWholeWords"/>

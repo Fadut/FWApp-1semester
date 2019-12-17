@@ -31,10 +31,22 @@
                 <Grid BorderThickness="1.2" BorderBrush="Black" Margin="36,96,0,193" HorizontalAlignment="Left" Width="132">
                     <Grid Background="#D4D4D4" Margin="10,111,10,8" BorderBrush="Black" BorderThickness="1">
                         <TextBlock Text="500 pt." FontFamily="Comic Sans MS" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"  Height="20" Width="70"/>
+                        <Button Background="#00000000"  Width="129" Click="Button_Click" Margin="0,-115,0,-12" VerticalAlignment="Stretch" HorizontalAlignment="Center" />
+                        <Image Source="/Assets/JD-03-512.png" Margin="3,-97,2,29" />
                     </Grid>
 
-                    <TextBlock Text="BILLEDE" FontFamily="Comic Sans MS" HorizontalAlignment="Center" VerticalAlignment="Top" TextAlignment="Center" Margin="0,55,0,0" Height="21" Width="140"/>
-                    <Button Background="#00000000" HorizontalAlignment="Center" Width="130" Click="Button_Click" Height="143"/>
+                    <Grid BorderThickness="1.2" BorderBrush="Black" Margin="215,-3,-216,0">
+                        <Grid Background="#D4D4D4" Margin="10,111,10,8" BorderBrush="Black" BorderThickness="1">
+                            <TextBlock Text="500 pt." FontFamily="Comic Sans MS" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"  Height="20" Width="70"/>
+                            <Button Background="#00000000"  Width="129" Click="Button_Click" Margin="0,-112,0,-12" VerticalAlignment="Stretch" HorizontalAlignment="Center"/>
+                            <Image Source="/Assets/JD-03-512.png" Margin="3,-97,2,29" />
+                        </Grid>
+
+                    </Grid>
+
+
+
+
                 </Grid>
 
 

@@ -161,6 +161,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Fitness.jpg" />
+    <Content Include="Assets\JD-03-512.png" />
     <Content Include="Assets\VideoStart.png" />
     <Content Include="Assets\niveaulogo.png" />
     <Content Include="Assets\linklogo.png" />

@@ -6,6 +6,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
 namespace FWApp.ViewModel
 {
@@ -58,7 +60,26 @@ namespace FWApp.ViewModel
             set
             {
                 _selectedMuscleGroup = value;
+                Equipments.Clear();
+                foreach (var m in FindEquipmentMG())
+                {
+                    Equipments.Add(m);
+                }
                 OnPropertyChanged();
+            }
+        }
+
+        public List<string> MuscleSelection
+        {
+            get
+            {
+                List<string> MList = new List<string>();
+                foreach (var m in _equipments)
+                {
+                    if (!MList.Contains(m.MuscleGroup))
+                    MList.Add(m.MuscleGroup);
+                }
+                return MList;
             }
         }
 
@@ -68,7 +89,21 @@ namespace FWApp.ViewModel
             set
             {
                 _selectedName = value;
+                Equipments.Clear();
+                foreach (var m in FindEquipmentN())
+                {
+                    Equipments.Add(m);
+                }
                 OnPropertyChanged();
+            }
+        }
+
+        public List<string> NameSelection
+        {
+            get
+            {
+                List<string> NList = new List<string>();
+                return NList;
             }
         }
 
@@ -117,6 +152,9 @@ namespace FWApp.ViewModel
                 if (m.ID == SelectedID)
                 {
                     _shared.Found = m;
+
+                    Frame f = (Frame)Window.Current.Content;
+                    f.Navigate(typeof(EquipmentGuidePage));
                 }
             } 
         }
@@ -132,6 +170,19 @@ namespace FWApp.ViewModel
             }
         }
 
+        public List<Equipment> FindEquipmentMG()
+        {
+            List<Equipment> MGList = new List<Equipment>();
+            foreach (var m in catalog._maskiner)
+            {
+                if (m.MuscleGroup == SelectedMuscleGroup)
+                {
+                    MGList.Add(m);
+                }
+            }
+            return MGList;
+        }
+
         public void SøgEquipmentN()
         {
             foreach (var m in catalog._maskiner)
@@ -141,6 +192,19 @@ namespace FWApp.ViewModel
                     _shared.Found = m;
                 }
             }
+        }
+
+        public List<Equipment> FindEquipmentN()
+        {
+            List<Equipment> NList = new List<Equipment>();
+            foreach (var m in catalog._maskiner)
+            {
+                if (m.Name == SelectedName)
+                {
+                    NList.Add(m);
+                }
+            }
+            return NList;
         }
     }
 }

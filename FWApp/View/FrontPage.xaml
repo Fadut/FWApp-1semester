@@ -20,7 +20,7 @@
             <Setter Property="BorderBrush" Value="Black"/>
             <Setter Property="BorderThickness" Value="1.2"/>
             <Setter Property="CornerRadius" Value="15"/>
-            <Setter Property="Height" Value="90"/>
+            <Setter Property="Height" Value="88"/>
             <Setter Property="Width" Value="140"/>
         </Style>
 
@@ -57,7 +57,7 @@
 
                 <!--THIS IS THE HEADER-->
                 <Grid Grid.Row="0"  Background="#6E6E6E" BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Padding="0, 10, 0, 15">
-                    <TextBlock Text="Hej Bruger" FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Geneva" Foreground="#FF33FF33" VerticalAlignment="Top"/>
+                    <TextBlock FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Geneva" Foreground="#FF33FF33" VerticalAlignment="Top"><Run Text="Hej "/><Run Text="Bruger"/></TextBlock>
 
                     <!--GO BACK BUTTON-->
                     <Button Background="#00000000" VerticalAlignment="Center" HorizontalAlignment="Left" Height="45" Width="45">
@@ -72,35 +72,35 @@
                             <SymbolIcon Symbol="GlobalNavigationButton" Foreground="#FFD4D4D4"/>
                         </Viewbox>
                     </Button>
+
+                    <Button Content="Log ud"  VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click" Width="65" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="30" Margin="0, 0, 48, 0">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="-2.347" ScaleY="1"/>
+                        </Button.RenderTransform>
+                    </Button>
                 </Grid>
 
 
                 <!--GRID WITH NEWS AND POSTS-->
-                <Grid Grid.Row="1" Background="#E8E8E8" BorderThickness="1.2" BorderBrush="Black">
-                    <TextBlock Text="NEWS OG TILBUD" FontSize="26" TextAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontFamily="Geneva"/>
-                    
+                <Grid Grid.Row="1" Background="#E8E8E8" BorderThickness="1.2" BorderBrush="Black" Padding="40, 18, 0, 0">
+                    <TextBlock Text="NYHED" FontSize="22" TextAlignment="Center" VerticalAlignment="TOp" HorizontalAlignment="Left" Foreground="Black" FontFamily="Geneva"/>
 
-                    <!--INSERT IMAGE HERE -->
+                    <Image Source="../Assets/nyhed.jpg" Height="170" Width="270"/>
 
-                    <Button Foreground="Black" Background="#E8E8E8" HorizontalAlignment="Left" Height="45" Width="45">
-                        <Viewbox>
-                            <SymbolIcon Symbol="Back"/>
-                        </Viewbox>
-                    </Button>
 
-                    <Button Foreground="Black" Background="#E8E8E8" HorizontalAlignment="Right" Height="45" Width="45">
-                        <Viewbox>
-                            <SymbolIcon Symbol="Forward"/>
-                        </Viewbox>
-                    </Button>
+                   
+
                 </Grid>
 
 
                 <!--GRID WITH FITNESS LEVEL-->
-                <Grid Grid.Row="2" Background="#E8E8E8" Padding="20, 25, 0, 0">
-                    <TextBlock Text="Fitness Niveau" FontSize="22" TextAlignment="Left" VerticalAlignment="Top" Style="{StaticResource TextBlockStyle}" />
+                <Grid Grid.Row="2" Background="#E8E8E8" Padding="40, 18, 68, 20" BorderThickness="1.2" BorderBrush="Black">
+                    <TextBlock Text="Fitness Niveau" FontSize="22" TextAlignment="Left" VerticalAlignment="Top" HorizontalAlignment="Left" Style="{StaticResource TextBlockStyle}"/>
 
-                    <!--INSERT IMAGE -->
+                    <Image Source="../Assets/fitness_niveau.png" Height="120" Width="120" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+                    <TextBlock Text="4" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,54,0" Style="{StaticResource TextBlockStyle}"/>
+
                 </Grid>
 
 

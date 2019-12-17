@@ -19,8 +19,6 @@ namespace FWApp.ViewModel
         private string _selectedMuscleGroup;
         private string _selectedName;
         private RelayCommand _søgningCommandID;
-        private RelayCommand _søgningCommandMG;
-        private RelayCommand _søgningCommandN;
         private Catalog catalog = new Catalog();
         public SharedKnowledgeSingleton _shared;
 
@@ -89,11 +87,6 @@ namespace FWApp.ViewModel
             set
             {
                 _selectedName = value;
-                Equipments.Clear();
-                foreach (var m in FindEquipmentN())
-                {
-                    Equipments.Add(m);
-                }
                 OnPropertyChanged();
             }
         }
@@ -113,17 +106,12 @@ namespace FWApp.ViewModel
             set { _søgningCommandID = value; }
         }
 
-        public RelayCommand SøgningCommandMG
-        {
-            get { return _søgningCommandMG; }
-            set { _søgningCommandMG = value; }
-        }
 
-        public RelayCommand SøgningCommandN
-        {
-            get { return _søgningCommandN; }
-            set { _søgningCommandN = value; }
-        }
+        //public RelayCommand SøgningCommandN
+        //{
+        //    get { return _søgningCommandN; }
+        //    set { _søgningCommandN = value; }
+        //}
 
         public SharedKnowledgeSingleton Shared
         {
@@ -138,8 +126,6 @@ namespace FWApp.ViewModel
             _selectedEquipment = new Equipment(0, "Navn", "Muskelgruppe", "Forklaring", "Videoen");
             
             SøgningCommandID = new RelayCommand(SøgEquipmentID);
-            SøgningCommandMG = new RelayCommand(SøgEquipmentMG);
-            SøgningCommandN = new RelayCommand(SøgEquipmentN);
             _shared = SharedKnowledgeSingleton.Instance;
         }
 
@@ -159,16 +145,6 @@ namespace FWApp.ViewModel
             } 
         }
 
-        public void SøgEquipmentMG()
-        {
-            foreach (var m in catalog._maskiner)
-            {
-                if (m.MuscleGroup == SelectedMuscleGroup)
-                {
-                    _shared.Found = m;
-                }
-            }
-        }
 
         public List<Equipment> FindEquipmentMG()
         {
@@ -183,28 +159,5 @@ namespace FWApp.ViewModel
             return MGList;
         }
 
-        public void SøgEquipmentN()
-        {
-            foreach (var m in catalog._maskiner)
-            {
-                if (m.Name == SelectedName)
-                {
-                    _shared.Found = m;
-                }
-            }
-        }
-
-        public List<Equipment> FindEquipmentN()
-        {
-            List<Equipment> NList = new List<Equipment>();
-            foreach (var m in catalog._maskiner)
-            {
-                if (m.Name == SelectedName)
-                {
-                    NList.Add(m);
-                }
-            }
-            return NList;
-        }
     }
 }

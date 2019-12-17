@@ -31,7 +31,6 @@
     </Page.Resources>
 
 
-
     <Page.Background>
         <ThemeResource ResourceKey="ApplicationPageBackgroundThemeBrush"/>
     </Page.Background>
@@ -46,7 +45,6 @@
         <ScrollViewer>
             <Grid>
 
-                <!--Row definitions which will help with the layout of the page. Use these so grids automatically align themselves-->
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="0.55*"/>
@@ -56,8 +54,8 @@
 
 
                 <!--THIS IS THE HEADER-->
-                <Grid Grid.Row="0"  Background="#6E6E6E" BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Padding="0, 10, 0, 15">
-                    <TextBlock FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Geneva" Foreground="#FF33FF33" VerticalAlignment="Top"><Run Text="Hej "/><Run Text="Bruger"/></TextBlock>
+                <Grid Grid.Row="0"  Background="#FF4D4D4D" BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Padding="0, 10, 0, 15">
+                    <TextBlock FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Geneva" Foreground="#FF33FF33" VerticalAlignment="Top" Text="Velkommen"/>
 
                     <!--GO BACK BUTTON-->
                     <Button Background="#00000000" VerticalAlignment="Center" HorizontalAlignment="Left" Height="45" Width="45">
@@ -73,6 +71,7 @@
                         </Viewbox>
                     </Button>
 
+                    <!--LOG OUT BUTTON -->
                     <Button Content="Log ud"  VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click" Width="65" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="30" Margin="0, 0, 48, 0">
                         <Button.RenderTransform>
                             <CompositeTransform Rotation="-2.347" ScaleY="1"/>
@@ -86,10 +85,6 @@
                     <TextBlock Text="NYHED" FontSize="22" TextAlignment="Center" VerticalAlignment="TOp" HorizontalAlignment="Left" Foreground="Black" FontFamily="Geneva"/>
 
                     <Image Source="../Assets/nyhed.jpg" Height="170" Width="270"/>
-
-
-                   
-
                 </Grid>
 
 
@@ -141,7 +136,7 @@
 
                     <Button HorizontalAlignment="Left" VerticalAlignment="Bottom" Style="{StaticResource IconBox}">
                         <Grid>
-                            <TextBlock Text="PLACEHOLDER" FontSize="12" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Indstillinger" FontSize="12" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
                             <Viewbox Style="{StaticResource ViewBox}" Margin="0, 0, 0, 18">
                                 <SymbolIcon Symbol="Setting" Foreground="Black"/>
                             </Viewbox>
@@ -190,11 +185,6 @@
                     </Button>
 
                 </Grid>
-
-
-
-
-
             </Grid>
         </ScrollViewer>
     </Grid>

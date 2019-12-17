@@ -22,11 +22,16 @@
         <TextBlock HorizontalAlignment="Left"  Margin="54,357,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="575" SelectionChanged="TextBlock_SelectionChanged"/>
         <TextBox x:Name="Email" PlaceholderText="Email" HorizontalAlignment="Center" Margin="0,257,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="332" Height="72" TextChanged="Email_TextChanged" Text="{Binding Bruger.Email, Mode=TwoWay}"/>
         <TextBox x:Name="Password" PlaceholderText="Password" HorizontalAlignment="Center" Margin="0,398,0,0"   TextWrapping="Wrap" VerticalAlignment="Top" Width="328" Height="70" TextChanged="Password_TextChanged" Text="{Binding Bruger.Password, Mode=TwoWay}"/>
+       
+
         <Button Content="Log ind" Command="{Binding LogIndCommand}" Margin="103,549,0,0" VerticalAlignment="Top" FontSize="20" Width="206" Height="60" RenderTransformOrigin="0.435,-1.152" Click="Button_Click"/>
 
 
         <TextBlock HorizontalAlignment="Left" Margin="43,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="576"><Run Text="   "/><Run Text=" "/><Run Text="Email"/></TextBlock>
-        <Button Content="Opret Bruger" Margin="0,52,0,0" VerticalAlignment="Top" Width="431" FontSize="20" Height="73" HorizontalAlignment="Center" Grid.Row="1" Click="Button_Click_1"/>
+        
+        
+        <Button Content="Opret Bruger" Margin="0, 0, 87, 50" VerticalAlignment="Bottom" Width="206" FontSize="20" Height="60" HorizontalAlignment="Center" Grid.Row="1" Click="Button_Click_1"/>
+
 
         <CheckBox Content="Husk mig" Margin="61,492,0,0" IsChecked="{Binding RememberMe, Mode=TwoWay}" VerticalAlignment="Top"/>
         <Image Source="/Assets/Fitness.jpg" Height="124" Margin="-5,4,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="430"/>

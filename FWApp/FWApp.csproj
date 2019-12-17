@@ -146,9 +146,6 @@
     <Compile Include="View\CreateUserPage.xaml.cs" />
     <Compile Include="View\LoginPage.xaml.cs" />
     <Compile Include="View\FrontPage.xaml.cs" />
-    <Compile Include="View\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\FitnessGuidePage.xaml.cs">
       <DependentUpon>FitnessGuidePage.xaml</DependentUpon>
@@ -207,10 +204,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="View\LoginPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

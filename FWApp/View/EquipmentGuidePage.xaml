@@ -17,29 +17,23 @@
     <Grid Background="#6E6E6E">
         <Grid BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Background="#FF4D4D4D" Height="72">
             <TextBlock Text="Vælg Maskine" FontWeight="Bold" FontSize="30" TextAlignment="Center" FontFamily="Geneva" Foreground="#FF33FF33" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" Width="300" Margin="66, 15, 66, 0"/>
-            <Button Content="🡐" FocusVisualPrimaryBrush="#00121212" Foreground="#FFD4D4D4" Background="#00000000" FontFamily="Comic Sans MS" FontSize="50" Height="69" Width="66" Margin="1,0,0,0">
+            <Button Content="🡐" FocusVisualPrimaryBrush="#00121212" Foreground="#FFD4D4D4" Background="#00000000" FontFamily="Geneva" FontSize="50" Height="69" Width="66" Margin="0,-4,0,0">
                 <Custom:Interaction.Behaviors>
                     <Custom1:EventTriggerBehavior EventName="Click">
                         <Custom1:NavigateToPageAction TargetPage="FWApp.FitnessGuidePage"/>
                     </Custom1:EventTriggerBehavior>
                 </Custom:Interaction.Behaviors>
             </Button>
-            <Button Content="☰" FontSize="35" Background="#00000000" Margin="369, 0, 0, 0" VerticalAlignment="Top" HorizontalAlignment="Right" Height="72" Width="63" Foreground="#FFD4D4D4"/>
+            <Button Content="☰" FontSize="35" Background="#00000000" Margin="369, -4, 0, 0" VerticalAlignment="Top" HorizontalAlignment="Right" Height="72" Width="63" Foreground="#FFD4D4D4"/>
         </Grid>
         <Grid Margin="0,70,0,5" Background="Gray">
-            <StackPanel Orientation="Vertical" BorderBrush="Black" BorderThickness="1.2" HorizontalAlignment="Center" Background="LightGray" Margin="0,30,0,630" Width="386">
-                <ComboBox PlaceholderText="Muskelgruppe" ItemsSource="{Binding MuscleSelection}" SelectedItem="{Binding SelectedMuscleGroup, Mode=TwoWay}" FontSize="15" FontFamily="Verdana" Width="388">
-                    <!--<ComboBox.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel>
-                                <TextBlock Text="{Binding MuscleGroup}"/>
-                            </StackPanel>
-                        </DataTemplate>
-                    </ComboBox.ItemTemplate>-->
+            <StackPanel Orientation="Vertical" BorderBrush="Black"  HorizontalAlignment="Center" Background="LightGray" Margin="0,30,0,630" Width="386">
+                <ComboBox PlaceholderText="Muskelgruppe" ItemsSource="{Binding MuscleSelection}" SelectedItem="{Binding SelectedMuscleGroup, Mode=TwoWay}" FontSize="15" FontFamily="Verdana" Width="388" BorderBrush="Black">
                 </ComboBox>
+
             </StackPanel>
-            <StackPanel Orientation="Vertical" BorderBrush="Black" BorderThickness="1.2" HorizontalAlignment="Center" Background="LightGray" Margin="0,90,0,570" Width="386">
-                <ComboBox PlaceholderText="Navn" ItemsSource="{Binding Equipments}" SelectedItem="{Binding Shared.Found, Mode=TwoWay}"  FontSize="15" FontFamily="Verdana" Width="386">
+            <StackPanel Orientation="Vertical" BorderBrush="Black"  HorizontalAlignment="Center" Background="LightGray" Margin="0,90,0,570" Width="386">
+                <ComboBox PlaceholderText="Navn" ItemsSource="{Binding Equipments}" SelectedItem="{Binding Shared.Found, Mode=TwoWay}"  FontSize="15" FontFamily="Verdana" Width="386" BorderBrush="Black">
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
@@ -49,13 +43,13 @@
                     </ComboBox.ItemTemplate>
                 </ComboBox>
             </StackPanel>
-            <StackPanel Orientation="Vertical" BorderBrush="Black" BorderThickness="1.2" HorizontalAlignment="Center" Background="LightGray" Margin="0,170,0,20" Width="386">
-                <TextBlock Text="{Binding Shared.Found.Name}" FontSize="30" TextAlignment="Center" HorizontalAlignment="Center" Height="70" FontFamily="Verdana" Width="367"/>
+            <StackPanel Orientation="Vertical" BorderBrush="Black" BorderThickness="1.2" HorizontalAlignment="Center" Background="DarkGray" Margin="0,170,0,20" Width="386">
+                <TextBlock Text="{Binding Shared.Found.Name}" FontSize="30" TextAlignment="Center" HorizontalAlignment="Center" Height="55" FontFamily="Verdana" Width="367"/>
                 <StackPanel>
-                    <WebView Source="{Binding Shared.Found.Video}" Height="225"/>
+                    <WebView Source="{Binding Shared.Found.Video}" Height="335"/>
                 </StackPanel>
-                <StackPanel>
-                    <TextBlock Text="{Binding Shared.Found.Description}" FontSize="15" FontFamily="Verdana" Height="202" TextWrapping="WrapWholeWords"/>
+                <StackPanel Padding="7, 7, 0, 0">
+                    <TextBlock Text="{Binding Shared.Found.Description}" FontSize="15" FontFamily="Verdana" Height="100" TextWrapping="WrapWholeWords" VerticalAlignment="Bottom"/>
                 </StackPanel>
             </StackPanel>
 

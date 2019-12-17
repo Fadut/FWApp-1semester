@@ -158,6 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Fitness.jpg" />
+    <Content Include="Assets\JD-03-512.png" />
     <Content Include="Assets\nyhed.jpg" />
     <Content Include="Assets\VideoStart.png" />
     <Content Include="Assets\fitness_niveau.png" />

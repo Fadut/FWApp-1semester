@@ -11,15 +11,28 @@
 
     <Grid Background="#E3E3E3">
         <Grid BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Background="#FF4D4D4D" Height="72">
+           
             <TextBlock Text="Kontakt &amp; Hjælp" FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Geneva" Foreground="#FF33FF33" VerticalAlignment="Top" Width="300" Margin="66,15,66,0"/>
-            <Button Content="🡐" FocusVisualPrimaryBrush="#00121212" Foreground="#FFD4D4D4" Background="#00000000" FontFamily="Geneva" FontSize="50" Height="76" Width="66" VerticalAlignment="Top" Margin="0,-4,0,0" Click="Button_Click_1">
+           
+            <Button FocusVisualPrimaryBrush="#00121212" Background="#00000000" FontFamily="Geneva" Height="45" Width="45" VerticalAlignment="Center" Click="Button_Click_1">
+                <Viewbox>
+                    <SymbolIcon Symbol="Back" Foreground="#FFD4D4D4"/>
+                </Viewbox>
                 <Custom:Interaction.Behaviors>
                     <Custom1:EventTriggerBehavior EventName="Click">
                         <Custom1:NavigateToPageAction TargetPage="FWApp.FrontPage"/>
                     </Custom1:EventTriggerBehavior>
                 </Custom:Interaction.Behaviors>
             </Button>
-            <Button Content="☰" FontSize="35" Background="#00000000" Margin="369,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Right"  Height="72" Width="63" Foreground="#FFD4D4D4"/>
+
+
+            <Button Background="#00000000" VerticalAlignment="Center" HorizontalAlignment="Right" Height="45" Width="45" >
+                <Viewbox>
+                    <SymbolIcon Symbol="GlobalNavigationButton" Foreground="#FFD4D4D4"/>
+                </Viewbox>
+            </Button>
+
+
         </Grid>
 
         <ScrollViewer Margin="0,72,0,-168">

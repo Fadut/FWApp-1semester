@@ -11,7 +11,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace FWApp.ViewModel
 {
-    public class FitnessGuideVM : BaseVM
+    public class FitnessGuideViewModel : BaseViewModel
     {
         private ObservableCollection<Equipment> _equipments;
         private Equipment _selectedEquipment;
@@ -118,7 +118,7 @@ namespace FWApp.ViewModel
             get { return _shared; }
         }
 
-        public FitnessGuideVM()
+        public FitnessGuideViewModel()
         {
             catalog = new Catalog();
             _equipments = new ObservableCollection<Equipment>(catalog.Equipment);

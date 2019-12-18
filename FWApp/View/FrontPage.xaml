@@ -30,15 +30,14 @@
         </Style>
     </Page.Resources>
 
-
     <Page.Background>
         <ThemeResource ResourceKey="ApplicationPageBackgroundThemeBrush"/>
     </Page.Background>
 
-    <Page.DataContext>
-        <viewModel:ForsideVM/>
-    </Page.DataContext>
 
+    <Page.DataContext>
+        <viewModel:ForsideViewModel/>
+    </Page.DataContext>
 
 
     <Grid>
@@ -57,26 +56,28 @@
                 <Grid Grid.Row="0"  Background="#FF4D4D4D" BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Padding="0, 10, 0, 15">
                     <TextBlock FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Geneva" Foreground="#FF33FF33" VerticalAlignment="Top" Text="Velkommen"/>
 
-                    <!--GO BACK BUTTON-->
+                    <!--GO BACK BUTTON TEMPLATE
                     <Button Background="#00000000" VerticalAlignment="Center" HorizontalAlignment="Left" Height="45" Width="45">
-                        <Viewbox >
+                        <Viewbox>
                             <SymbolIcon Symbol="Back" Foreground="#FFD4D4D4"/>
                         </Viewbox>
-                    </Button>
+                    </Button>-->
 
                     <!--MENU BUTTON-->
-                    <Button Background="#00000000" VerticalAlignment="Center" HorizontalAlignment="Right" Height="45" Width="45" >
+                    <Button Background="#00000000" VerticalAlignment="Center" HorizontalAlignment="Right" Height="45" Width="45">
                         <Viewbox>
                             <SymbolIcon Symbol="GlobalNavigationButton" Foreground="#FFD4D4D4"/>
                         </Viewbox>
                     </Button>
 
                     <!--LOG OUT BUTTON -->
-                    <Button Content="Log ud"  VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click" Width="65" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="30" Margin="0, 0, 48, 0">
+                    <Button Content="Log ud"  VerticalAlignment="Center" HorizontalAlignment="Left" Click="Button_Click" Width="65" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="30" Margin="10, 0, 0, 0">
                         <Button.RenderTransform>
                             <CompositeTransform Rotation="-2.347" ScaleY="1"/>
                         </Button.RenderTransform>
                     </Button>
+
+
                 </Grid>
 
 

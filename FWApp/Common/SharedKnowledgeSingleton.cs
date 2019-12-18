@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FWApp.Common
 {
-  public  class SharedKnowledgeSingleton : BaseVM 
+  public  class SharedKnowledgeSingleton : BaseViewModel 
     {
         private static SharedKnowledgeSingleton _instance = new SharedKnowledgeSingleton();
 

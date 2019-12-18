@@ -9,9 +9,8 @@ using FWApp.Model;
 
 namespace FWApp.ViewModel
 {
-    public class ForsideVM : BaseVM
+    public class ForsideViewModel : BaseViewModel
     {
-
 
         #region Instance Fields
 
@@ -25,13 +24,14 @@ namespace FWApp.ViewModel
 
         #region Constructor
 
-        public ForsideVM()
+        public ForsideViewModel()
         {
-            //_adCatalog = new Catalog();
-            //_advertisements = new ObservableCollection<Advertisement>(_adCatalog.Advertisements);
+
         }
 
         #endregion
+
+
 
         public ObservableCollection<Advertisement> Advertisements
         {

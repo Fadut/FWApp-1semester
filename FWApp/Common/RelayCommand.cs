@@ -9,11 +9,11 @@ namespace FWApp.Common
 {
     public class RelayCommand : ICommand
     {
-        private Action _metode;
+        private Action _execute;
 
-        public RelayCommand(Action metode)
+        public RelayCommand(Action execute)
         {
-            _metode = metode;
+            _execute = execute;
         }
 
         public bool CanExecute(object parameter)
@@ -23,9 +23,11 @@ namespace FWApp.Common
 
         public void Execute(object parameter)
         {
-            _metode();
+            _execute();
         }
 
         public event EventHandler CanExecuteChanged;
+
+       
     }
 }

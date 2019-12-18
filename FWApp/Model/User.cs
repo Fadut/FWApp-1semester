@@ -8,6 +8,8 @@ namespace FWApp.Model
 {
     public class User
     {
+
+
         #region Instance Fields
 
         private string _name;
@@ -17,6 +19,9 @@ namespace FWApp.Model
         private string _password;
 
         #endregion
+
+        #region Constructor
+
         public User(string name, int phoneNumber, string address, string email, string password)
         {
             _name = name;
@@ -34,6 +39,8 @@ namespace FWApp.Model
             _email = "";
             _password = "";
         }
+        #endregion 
+
         #region Properties
 
         public string Name
@@ -68,5 +75,7 @@ namespace FWApp.Model
 
         #endregion
         
+
+
     }
 }

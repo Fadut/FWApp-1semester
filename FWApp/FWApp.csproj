@@ -123,10 +123,10 @@
     <Compile Include="Common\SharedKnowledgeSingleton.cs" />
     <Compile Include="Model\Catalog.cs" />
     <Compile Include="Model\Advertisement.cs" />
-    <Compile Include="ViewModel\BaseVM.cs" />
-    <Compile Include="ViewModel\FitnessGuideVM.cs" />
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\FitnessGuideViewModel.cs" />
     <Compile Include="Model\FitnessCentre.cs" />
-    <Compile Include="ViewModel\ForsideVM.cs" />
+    <Compile Include="ViewModel\ForsideViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="View\BusynessView.xaml.cs">
       <DependentUpon>BusynessView.xaml</DependentUpon>

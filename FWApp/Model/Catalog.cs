@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FWApp.Model
 {
-    class Catalog : BaseVM
+    public class Catalog : BaseViewModel
     {
         public List<Equipment> _maskiner;
 

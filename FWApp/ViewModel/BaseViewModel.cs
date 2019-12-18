@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FWApp.ViewModel
 {
-    public class BaseVM : INotifyPropertyChanged
+    public class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

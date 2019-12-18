@@ -8,21 +8,24 @@ namespace FWApp.Model
 {
     public class FitnessCentre
     {
-        // Instance fields
+        #region Instance fields
         private double _startHour;
         private double _endHour;
         private string _adress;
+        #endregion
 
-        // (default) Constructor
+
+        #region Constructor
         public FitnessCentre(double startHour, double endHour, string adress)
         {
-            //kfkfsj
             _startHour = startHour;
             _endHour = endHour;
             _adress = adress;
         }
+        #endregion
 
-        // Properties
+
+        #region Properties
         public double StartHour
         {
             get { return _startHour; }
@@ -38,5 +41,8 @@ namespace FWApp.Model
             get { return _adress; }
             set { _adress = value; }
         }
+        #endregion 
+
+
     }
 }

@@ -12,32 +12,58 @@
     <Grid Background="#6E6E6E">
         <Grid Margin="0,286,0,436" BorderThickness="1.2" BorderBrush="Black"/>
         <Grid BorderThickness="1" VerticalAlignment="Top" BorderBrush="Black" Background="#FF4D4D4D" Height="72">
-            <TextBlock Text="Belønninger" FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Comic Sans MS" Foreground="#FF33FF33" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" Width="300" Margin="66,15,66,0"/>
-            <Button Content="🡐" FocusVisualPrimaryBrush="#00121212" Foreground="#FFD4D4D4" Background="#00000000" FontFamily="Comic Sans MS" FontSize="50" Height="76" Width="66" VerticalAlignment="Top" Margin="0,-4,0,0">
+           
+            <TextBlock Text="Belønninger" FontSize="30" TextAlignment="Center" FontWeight="Bold" FontFamily="Geneva" Foreground="#FF33FF33" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" Width="300" Margin="66,15,66,0"/>
+            
+            <Button FocusVisualPrimaryBrush="#00121212" Background="#00000000" FontFamily="Geneva" Height="45" Width="45" VerticalAlignment="Center">
+               <Viewbox>
+                   <SymbolIcon Symbol="Back" Foreground="#FFD4D4D4"/>
+               </Viewbox>
                 <Custom:Interaction.Behaviors>
                     <Custom1:EventTriggerBehavior EventName="Click">
                         <Custom1:NavigateToPageAction TargetPage="FWApp.FrontPage"/>
                     </Custom1:EventTriggerBehavior>
                 </Custom:Interaction.Behaviors>
             </Button>
-            <Button Content="☰" FontSize="35" Background="#00000000" Margin="369,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Right"  Height="72" Width="63" Foreground="#FFD4D4D4"/>
+
+
+            <Button Background="#00000000" VerticalAlignment="Center" HorizontalAlignment="Right" Height="45" Width="45">
+                <Viewbox>
+                    <SymbolIcon Symbol="GlobalNavigationButton" Foreground="#FFD4D4D4"/>
+                </Viewbox>
+            </Button>
+
         </Grid>
-        <Grid Margin="0,70,0,479" Background="#FF33FF33" BorderThickness="1.2" BorderBrush="Black"/>
+
+
+
+        <Grid Margin="0,70,0,479" Background="#E8E8E8" BorderThickness="1.2" BorderBrush="Black">
+
+            <Image Source="../Assets/fitness_niveau.png" Height="120" Width="120" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0, 18, 0, 0"/>
+
+            <TextBlock Text="Fitness Niveau: 4" FontSize="30" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="Black" Margin="0, 0, 0, 20" FontFamily="Geneva"/>
+
+            <TextBlock Text="4" FontSize="22" VerticalAlignment="Center" FontFamily="Geneva" Foreground="Black" HorizontalAlignment="Center" Margin="0, 0, 0, 54"/>
+
+        </Grid>
+
+
         <Grid Margin="0,321,0,13" Background="#E8E8E8">
-            <TextBlock Text="Belønningsliste" FontSize="30" FontFamily="Comic Sans MS" Margin="30,20,190,354" FontWeight="Bold"/>
+
+            <TextBlock Text="Belønningsliste" FontSize="30" FontFamily="Geneva" Margin="30,20,183,354" FontWeight="Bold" Foreground="Black"/>
 
             <Grid BorderThickness="1.2" BorderBrush="Black">
 
                 <Grid BorderThickness="1.2" BorderBrush="Black" Margin="36,96,0,193" HorizontalAlignment="Left" Width="132">
                     <Grid Background="#D4D4D4" Margin="10,111,10,8" BorderBrush="Black" BorderThickness="1">
-                        <TextBlock Text="500 pt." FontFamily="Comic Sans MS" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"  Height="20" Width="70"/>
+                        <TextBlock Text="500 pt." FontFamily="Geneva" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"  Height="20" Width="70" Foreground="Black"/>
                         <Button Background="#00000000"  Width="129" Click="Button_Click" Margin="0,-115,0,-12" VerticalAlignment="Stretch" HorizontalAlignment="Center" />
                         <Image Source="/Assets/JD-03-512.png" Margin="3,-97,2,29" />
                     </Grid>
 
                     <Grid BorderThickness="1.2" BorderBrush="Black" Margin="215,-3,-216,0">
                         <Grid Background="#D4D4D4" Margin="10,111,10,8" BorderBrush="Black" BorderThickness="1">
-                            <TextBlock Text="500 pt." FontFamily="Comic Sans MS" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"  Height="20" Width="70"/>
+                            <TextBlock Text="500 pt." FontFamily="Geneva" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"  Height="20" Width="70" Foreground="Black"/>
                             <Button Background="#00000000"  Width="129" Click="Button_Click" Margin="0,-112,0,-12" VerticalAlignment="Stretch" HorizontalAlignment="Center"/>
                             <Image Source="/Assets/JD-03-512.png" Margin="3,-97,2,29" />
                         </Grid>

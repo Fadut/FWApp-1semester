@@ -8,12 +8,19 @@ namespace FWApp.Model
 {
     public class Equipment
     {
+
+
+        #region Instance fields
         private int _iD;
         private string _name;
         private string _muscleGroup;
         private string _description;
         private string _video;
 
+        #endregion
+
+
+        #region Constructor
         public Equipment() { }
         public Equipment(int iD, string name, string muscleGroup, string description, string video)
         {
@@ -24,6 +31,10 @@ namespace FWApp.Model
             _video = video;
         }
 
+        #endregion
+
+
+        #region Properties
         public int ID
         {
             get { return _iD; }
@@ -54,9 +65,20 @@ namespace FWApp.Model
             set { _video = value; }
         }
 
+
+        #endregion
+
+
+        #region Methods
         public override string ToString()
         {
             return $"{nameof(ID)}: {ID}, {nameof(Name)}: {Name}, {nameof(MuscleGroup)}: {MuscleGroup}, {nameof(Description)}: {Description}, {nameof(Video)}: {Video}";
         }
+
+        #endregion
+
+
+
+
     }
 }

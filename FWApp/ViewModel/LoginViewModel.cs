@@ -14,7 +14,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace FWApp.ViewModel
 {
-    class LoginViewModel : BaseVM
+    class LoginViewModel : BaseViewModel
     {
         private RelayCommand _logindCommand;
 

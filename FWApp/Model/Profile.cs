@@ -8,6 +8,7 @@ namespace FWApp.Model
 {
     public class Profile
     {
+
         #region Instance Fields
 
         private int _fitnessNiveau;
@@ -31,8 +32,8 @@ namespace FWApp.Model
 
         #endregion
 
-        #region Methods
+        
 
-        #endregion
+
     }
 }

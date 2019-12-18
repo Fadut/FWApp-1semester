@@ -8,11 +8,18 @@ namespace FWApp.Model
 {
     public class Advertisement
     {
+
+
+        #region Instance fields
         private string _postHeadline;
         private string _postText;
         private string _postDate;
         private string _postLink;
 
+        #endregion
+
+
+        #region Constructor
         public Advertisement(string postHeadline, string postText, string postDate, string postLink)
         {
             _postHeadline = postHeadline;
@@ -21,6 +28,10 @@ namespace FWApp.Model
             _postLink = postLink;
         }
 
+        #endregion
+
+
+        #region Properties
         public string PostHeadline
         {
             get { return _postHeadline; }
@@ -44,5 +55,10 @@ namespace FWApp.Model
             get { return _postLink; }
             set { _postLink = value; }
         }
+
+        #endregion
+
+
+
     }
 }
